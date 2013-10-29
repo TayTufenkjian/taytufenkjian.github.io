@@ -1,0 +1,37 @@
+ header {
+	background-image: url('coffeebeans.jpg');
+	padding: 10px;
+}
+
+header	h1 {
+	color: white;
+}
+
+#dream {
+	color: rgb(206,187,153);
+}
+
+body {
+	text-align: center;
+}
+
+footer, nav {
+	background-color: rgb(35,11,3);
+	color: rgb(206,187,153);	
+}
+
+nav {
+	padding: 8px;
+}
+
+footer {
+	padding: 20px;
+}
+
+h1, h2 {
+	font-family: Arial;
+}
+
+h2 {
+	color: rgb(35,11,3);
+}
