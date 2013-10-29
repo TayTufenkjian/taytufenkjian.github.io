@@ -13,3 +13,7 @@ footer, nav {
 p{
 	font-size: 10pt;
 }
+
+.post {
+	padding: 5px;
+}
