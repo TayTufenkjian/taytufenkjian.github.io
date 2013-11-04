@@ -40,6 +40,7 @@ h1, h2 {
 
 h1 {
 	font-size: 60px;
+	margin-bottom: 0px;
 }
 
 h2 {
@@ -61,6 +62,14 @@ footer, nav {
 }
 
 nav {
+	display: inline;
+}
+
+footer	{
+	display: block;
+}
+
+nav {
 	font-size: 12px;
 	text-align: right;
 }
@@ -79,12 +88,21 @@ aside {
 
 p, footer {
 	font-size: 12px;
+	line-height: 1.4em;
 }
 
 .post {
 	padding: 5px;
 }
 
-section {
+.wrapper {
 	width: 700px;
+	margin: 0 auto;
+	float: left;
 }
+
+.container {
+	float: left;
+}
+
+
