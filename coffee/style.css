@@ -1,31 +1,18 @@
- header {
+header {
 	background-image: url('coffeebeans.jpg');
 	padding: 10px;
 }
 
-header	h1 {
-	color: white;
-}
-
 #dream {
 	color: rgb(206,187,153);
+	font-family: 'Rochester', cursive;
+	margin-bottom: 0px;
 }
 
-body {
-	text-align: center;
-}
-
-footer, nav {
-	background-color: rgb(35,11,3);
-	color: rgb(206,187,153);	
-}
-
-nav {
-	padding: 8px;
-}
-
-footer {
-	padding: 20px;
+h1 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
 }
 
 h1, h2 {
@@ -35,3 +22,36 @@ h1, h2 {
 h2 {
 	color: rgb(35,11,3);
 }
+
+
+body {
+	text-align: center;
+}
+
+
+footer, nav {
+	background-color: rgb(35,11,3);
+	color: rgb(206,187,153);	
+	font-family: Georgia, serif;
+}
+
+p {
+ 	font-family: Georgia, serif;
+ 	font-size: 14px;
+}
+
+nav {
+	padding: 5px;
+}
+
+nav li {
+	display: inline;
+	padding-right: 15px;
+}
+
+footer {
+	padding: 20px;
+}
+
+
+
