@@ -19,10 +19,20 @@ header {
 .col {
 	float: left;
 	width: 50%;
-	padding: 20px;
+	padding: 20px 100px;
 }
 
-h2 {
+#left {
+	margin-right: -60px;
+	margin-left: 2%;
+}
+
+#right {
+	margin-left: -40px;
+	margin-right: 2%;
+}
+
+h3 {
 	color: rgb(35,11,3);
 	font-family: Arial;
 }
@@ -42,13 +52,10 @@ nav {
 	font-family: Georgia, serif;
 }
 
-/*ul {
-	vertical-align: middle;
-}*/
-
 nav li {
 	display: inline;
 	padding-right: 15px;
+	padding-top: 30px;
 }
 
 p {
