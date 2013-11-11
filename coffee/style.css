@@ -1,38 +1,54 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+	width: 1024px;
+	text-align: center;
+	height: 100%;
+}
+
+
 header {
-	background-image: url('coffeebeans.jpg');
-	padding: 10px;
+	background-image: url('beans.jpg');
+	height: 280px;
 }
 
-#dream {
-	color: rgb(206,187,153);
-	font-family: 'Rochester', cursive;
-	margin-bottom: 0px;
-}
-
-h1 {
-	color: white;
-	font-family: 'Oswald', sans-serif;
-	font-size: 48px;
-}
-
-h1, h2 {
-	font-family: Arial;
+.col {
+	float: left;
+	width: 50%;
+	padding: 20px;
 }
 
 h2 {
 	color: rgb(35,11,3);
+	font-family: Arial;
 }
 
-
-body {
-	text-align: center;
-}
-
-
-footer, nav {
+footer {
 	background-color: rgb(35,11,3);
 	color: rgb(206,187,153);	
 	font-family: Georgia, serif;
+	clear: both;
+	padding: 20px;
+}
+
+nav {
+	height: 10%;
+	background-color: rgb(35,11,3);
+	color: rgb(206,187,153);	
+	font-family: Georgia, serif;
+}
+
+/*ul {
+	vertical-align: middle;
+}*/
+
+nav li {
+	display: inline;
+	padding-right: 15px;
 }
 
 p {
@@ -40,18 +56,8 @@ p {
  	font-size: 14px;
 }
 
-nav {
-	padding: 5px;
+a:link, a:visited {
+	text-decoration: none;
+	color: inherit;
 }
-
-nav li {
-	display: inline;
-	padding-right: 15px;
-}
-
-footer {
-	padding: 20px;
-}
-
-
 
