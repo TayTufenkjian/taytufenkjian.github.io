@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	width: 7%;
+	height: 100%;
+	float: left;
+	background: white;
+/*	border: 1px solid black;*/
+	text-align: center;
+}
+
+#start {
+	color: white;
+	height: 100%;
+	background-color: rgb(0,163,230);
+	background-image: url("http://mario.ign.com/images/start/start-bg.png");
+}
+
+img[alt="IGN logo"] {
+	width: 60px;
+}
