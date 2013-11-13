@@ -10,21 +10,93 @@ html, body {
 	height: 100%;
 }
 
+/***************  Navigation ******************/
 nav {
 	width: 6.5%;
 	height: 100%;
 	float: left;
 	background: white;
-	background-image: url(http://mario.ign.com/images/nav-icons.png);
 	background-repeat: no-repeat;
-/*	border: 1px solid black;*/
 	text-align: center;
 	padding-top: 10px;
 }
 
+#navList {
+	position: relative;
+	padding-top: 80px;
+	}
+
+#navList li	{
+	margin: 0;
+	padding: 5px;
+	list-style: none;
+	top: 0;
+	width: 80%;
+	border: 1px solid black;
+}
+
+#navList li, #navList a {
+	display: block;
+	margin: auto;
+}
+
+
+#startStar{
+	top: 0px;
+	height: 70px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px 15px;
+	background-repeat: no-repeat;
+}
+
+#arcade {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -45px;
+	background-repeat: no-repeat;
+}
+
+#bit8 {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -95px;
+	background-repeat: no-repeat;
+}
+
+#bit16 {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -145px;
+	background-repeat: no-repeat;
+}
+
+#era3D {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -195px;
+	background-repeat: no-repeat;
+}
+
+
+#modern {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -245px;
+	background-repeat: no-repeat;
+}
+
+#finish {
+	top: 80px;
+	height: 60px;
+	background: url(http://mario.ign.com/images/nav-icons.png) 9px -295px;
+	background-repeat: no-repeat;
+}
+
+/**************** End of Navigation *********************/
+
 #content {
 	height: 100%;
 }
+
 
 #start {
 	color: white;
