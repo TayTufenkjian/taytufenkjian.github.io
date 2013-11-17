@@ -33,6 +33,7 @@ nav {
 	top: 0;
 	width: 80%;
 	border: 1px solid black;
+	border-radius: 50%;
 }
 
 #navList li, #navList a {
@@ -86,9 +87,15 @@ nav {
 
 #finish {
 	top: 80px;
-	height: 60px;
+	height: 70px;
 	background: url(http://mario.ign.com/images/nav-icons.png) 9px -295px;
 	background-repeat: no-repeat;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
 }
 
 /**************** End of Navigation *********************/
@@ -107,6 +114,8 @@ nav {
 	background-position: left bottom;
 	padding: 50px;
 }
+
+
 
 img[alt="IGN logo"] {
 	width: 60px;
