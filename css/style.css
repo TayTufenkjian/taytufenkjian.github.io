@@ -6,6 +6,7 @@
 
 html {
 	height: 100%;
+	width: 100%;
 }
 
 
@@ -39,6 +40,26 @@ nav li {
 	padding: 5% 5% 5% 0;
 }
 
+aside {
+	float: left;
+	height: 100%;
+	margin: 0 auto;
+	padding: 3%;
+}
+
+aside img {
+	display: block;
+	margin: 20% auto;
+}
+
+img[alt=ProfilePicture] {
+	border-radius: 50%;
+	border: 1px solid #fff;
+	-moz-box-shadow: 0 0 10px #777;
+	-webkit-box-shadow: 0 0 10px #777;
+	box-shadow: 0 0 10px #777; 
+}
+
 /*nav figure {
 	display: inline-block;
 	padding: 1%;
@@ -63,15 +84,9 @@ article {
 	padding: 5% 0;
 }
 
-nav, h1, h2, h3, h4, h5, h6 {
+nav, h1, h2, h3, h4, h5, h6, .accordion label {
 	font-family: 'Raleway', sans-serif;
 }
-
-
-img[alt=ProfilePicture] {
-	border-radius: 50%;
-}
-
 
 a:link, a:active, a:visited {
 	color: inherit;
@@ -92,6 +107,38 @@ nav a:link, a:active a:visited {
 
 nav a:hover {
 	color: #07C9F5;
-	text-decoration: underline;
+	text-decoration: none;
 	font-weight: bold;
 }
+
+.accordion label {
+	position: relative;
+	z-index: 20;
+	cursor: pointer;
+}
+
+.accordion label:hover {
+	color: #07C9F5;
+}
+
+.accordion article {
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	margin: -1px auto 0 auto;
+	padding: 0;
+	z-index: 10;
+	transition: height 0.3s ease-in-out;
+}
+
+.accordion input:checked ~ article {
+	transition: height 0.5s ease-in-out;
+	height: 750px;
+}
+
+
+.accordion input {
+	display: none;
+}
+
+
