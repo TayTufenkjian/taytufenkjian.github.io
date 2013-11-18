@@ -52,9 +52,9 @@ aside img {
 	margin: 20% auto;
 }
 
-img[alt=ProfilePicture] {
+img[alt="Profile Picture"] {
 	border-radius: 50%;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	-moz-box-shadow: 0 0 10px #777;
 	-webkit-box-shadow: 0 0 10px #777;
 	box-shadow: 0 0 10px #777; 
@@ -111,6 +111,10 @@ nav a:hover {
 	font-weight: bold;
 }
 
+nav.active	{
+	color: green;
+}
+
 .accordion label {
 	position: relative;
 	z-index: 20;
@@ -128,10 +132,16 @@ nav a:hover {
 	margin: -1px auto 0 auto;
 	padding: 0;
 	z-index: 10;
-	transition: height 0.3s ease-in-out;
+	-webkit-transition: height 0.5s ease-in-out;
+	-moz-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
+	transition: height 0.5s ease-in-out;
 }
 
 .accordion input:checked ~ article {
+	-webkit-transition: height 0.5s ease-in-out;
+	-moz-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
 	transition: height 0.5s ease-in-out;
 	height: 750px;
 }
