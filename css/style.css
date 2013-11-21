@@ -16,6 +16,10 @@ html {
 	margin: 0 auto;
 }
 
+header hr {
+	width: 170%;
+	margin-left: -50%;
+}
 
 body {
 	font-family: 'Crimson Text', serif;
@@ -111,44 +115,10 @@ nav a:hover {
 	font-weight: bold;
 }
 
-nav.active	{
+li.active	{
 	color: green;
 }
 
-.accordion label {
-	position: relative;
-	z-index: 20;
-	cursor: pointer;
-}
 
-.accordion label:hover {
-	color: #07C9F5;
-}
-
-.accordion article {
-	overflow: hidden;
-	height: 0px;
-	position: relative;
-	margin: -1px auto 0 auto;
-	padding: 0;
-	z-index: 10;
-	-webkit-transition: height 0.5s ease-in-out;
-	-moz-transition: height 0.5s ease-in-out;
-	-o-transition: height 0.5s ease-in-out;
-	transition: height 0.5s ease-in-out;
-}
-
-.accordion input:checked ~ article {
-	-webkit-transition: height 0.5s ease-in-out;
-	-moz-transition: height 0.5s ease-in-out;
-	-o-transition: height 0.5s ease-in-out;
-	transition: height 0.5s ease-in-out;
-	height: 750px;
-}
-
-
-.accordion input {
-	display: none;
-}
 
 
