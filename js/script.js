@@ -19,10 +19,3 @@ $(document).ready(function() {
 });
 
 
-
-// jQuery test
-// $(document).ready(function(){
-// 	$("img").click(function(){
-// 		$(this).fadeOut("fast");
-// 	});
-// });
