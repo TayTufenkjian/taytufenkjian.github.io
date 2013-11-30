@@ -71,9 +71,24 @@ nav a:hover {
 }
 
 nav li.active	{
-	border-bottom: solid 1px #07C9F5;
-	padding-bottom: 20px;
+	color: #07C9F5;
 }
+
+nav img {
+	opacity: 0.2;
+	padding: 2px;
+}
+
+.socialMedia {
+	float: right;
+	margin-top: -4%;
+}
+
+nav img:hover {
+	background: #07C9F5;
+	opacity: 1;
+}
+
 
 /******************** END Nav Style ********************/
 
