@@ -85,8 +85,10 @@ nav img {
 }
 
 nav img:hover {
-	background: #07C9F5;
+	background:  #07C9F5;
+	background-clip: content-box;
 	opacity: 1;
+	border-radius: 25%;
 }
 
 
