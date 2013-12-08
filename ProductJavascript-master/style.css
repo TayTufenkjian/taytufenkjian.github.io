@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin: 2% auto;
+	text-align: center;
+}
+
+nav {
+	margin: 0;
+	text-align: center;
+	border-top: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+}
+
+nav ul {
+	padding: 0;
+	margin: 1%;
+}
+
+nav li {
+	display: inline;
+	padding-right: 2%;
+}
+
+.products {
+	margin-top: 5%;
+}
+
+.product {
+  min-height:250px;
+}
+
+.product img {
+  float:left;
+}
+
