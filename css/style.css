@@ -41,7 +41,7 @@ footer {
 
 nav {
 	padding: 2% 1% 0 1%;
-	margin: 2% auto;
+	margin: 20px auto;
 	width: 70%;
 	font-family: 'Lato', sans-serif;
 	font-weight: '400';
@@ -51,13 +51,17 @@ nav ul {
 	margin: 0 auto;
 	width: 100%;
 	padding: 0;
+	list-style: none;
 }
 
-nav li {
+nav ul li {
 	display: inline;
 	padding: 5% 5% 5% 0;
 }
 
+.socialMedia {
+	text-align: right;
+}
 
 nav a:link, a:active a:visited {
 	color: inherit;
@@ -70,21 +74,19 @@ nav a:hover, nav li.active {
 }
 
 nav img {
+	float: right;
 	opacity: 0.2;
-	padding: 2px;
+	margin-right: 2px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+	border-radius: 50%;
 }
 
-.socialMedia {
-	float: right;
-	margin-top: -4%;
-	margin-bottom: 1px;
-}
 
 nav img:hover {
-	background:  #07C9F5;
-	background-clip: content-box;
+	background-color:  #07C9F5;
+	background-size: 30px 30px;
 	opacity: 1;
-	border-radius: 25%;
 }
 
 
@@ -103,6 +105,8 @@ aside img {
 }
 
 #profilePic {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
 	border-radius: 50%;
 	border: 2px solid #fff;
 	-moz-box-shadow: 0 0 10px #777;
