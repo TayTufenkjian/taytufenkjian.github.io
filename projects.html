@@ -2,20 +2,21 @@
 <html>
 <head>
 	<title>Tay Tufenkjian</title>
-	<!--- START stylesheets -->
+	<!--- Stylesheets -->
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
-	<!-- END stylesheets -->
-	<!-- START fonts and favicon -->
+	<!-- Fonts and favicon -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'/>
 	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-	<!-- END fonts and favicon -->
-	<!-- START scripts -->
+	<!--General scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type='text/javascript' src='js/script.js'></script>
-	<!-- END scripts -->	
+	<!--Nivo Slider items-->
+	<link rel="stylesheet" href="js/nivo-slider/nivo-slider.css" type="text/css" />
+	<link rel="stylesheet" href="js/nivo-slider/themes/default/default.css" type="text/css" />
+	<script src="js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="container">
@@ -36,25 +37,52 @@
 			<hr>		
 		</header>
 
-		<div class="content">
+		<div class="content projects">
 			<article>	
-				<h2 id="bookalokal">Bookalokal Photo Sharing</h2>
-				<p>From the design phase of a Startup Institute partner project. Our group implemented social features for version 2 of the <a href="http://bookalokal.com/" target="_blank">Bookalokal platform.</a></p>
+				<div class="projectDescription">
+					<h2>Bookalokal Photo Sharing</h2>
+					<p>At Startup Institute, I joined a cross-functional team to design wish list and photo sharing features for the food experience platform of a partner company called <a href="http://bookalokal.com/" target="_blank">Bookalokal.</a></p>
+				</div>
+				<!--Nivo Slider for Bookalokal Mockups-->				
+				<div class="slider-wrapper theme-default">
+    				<div class="ribbon"></div>
+						<div id="slider" class="nivoSlider">
+							<a href="images/Bookalokal-mockups-lg/BaL-landing-photos.jpg"><img src="images/Bookalokal-mockups-lg/BaL-landing-photos.jpg" alt="Landing page mockup" title="#captionLandingPage"/></a>
+						
+							<img src="images/Bookalokal-mockups-lg/BaL-Lokal-Board.jpg" alt="Lokal Board mockup" title="#captionLokalBoard"/>
+
+							<img src="images/Bookalokal-mockups-lg/BaL-Lokal-Board-photo-detail.jpg" alt="Photo detail page mockup" title="#captionPhotoDetail"/>
+						</div>
+				  	</div>
+				</div>
+
+				<div id="captionLandingPage" class="nivo-html-caption">
+    				Landing page
+				</div>
+
+				<div id="captionLokalBoard" class="nivo-html-caption">
+    				Lokal Board
+				</div>
+
+				<div id="captionPhotoDetail" class="nivo-html-caption">
+    				Photo detail page
+				</div>		
 			</article>
 
 			<article>
-				<h2 id="communicating">Communicating on the job hunt</h2>
-				<p>Going to networking events is only a third of the battle.  Those business cards are worthless if you don't know how to keep in touch.  But how do you know when to follow up?  How often is too often?  Should you reply or send a calendar invite?</p>
-
-				<p>This flow chart can help.</p>
+				<div class="projectDescription">
+					<h2>Communicating on the job hunt</h2>
+					<p>Going to networking events is only a third of the battle.  Those business cards are worthless if you don't know how to keep in touch.  But how do you know when to follow up?  How often is too often?  Should you reply or send a calendar invite?</p>
+					<p>This flow chart can help.</p>
+				</div>
 			</article>
 
 			<article>
-				<h2 id="consensus">Consensus</h2>
+				<div class="projectDescription">
+				<h2>Consensus</h2>
 				<p>Somtimes you need to plan events with people other than your Facebook friends.  How do you get a quick headcount in those casese?  There should be an app for that.</p>
+				</div>
 			</article>
-
-			<article></article>
 
 		</div>
 	</div>

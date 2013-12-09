@@ -120,9 +120,15 @@ aside img {
 	margin: 0 auto;
 }
 
-article {
+/*article {
 	margin: 0 0 1% 0;
 	padding: 5% 0;
+}*/
+
+.projectDescription {
+	width: 80%;	
+	margin: 0 auto 40px;
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
@@ -156,9 +162,20 @@ a:hover {
 	text-decoration: underline;
 }
 
+:focus {
+	outline: 0;
+}
+
+div.menu h2:hover {
+	color: #07C9F5;
+}
 
 
-
+/*.projects {
+	text-align: center;
+	width: 50%;
+}
+*/
 
 
 
