@@ -120,15 +120,16 @@ aside img {
 	margin: 0 auto;
 }
 
-/*article {
-	margin: 0 0 1% 0;
-	padding: 5% 0;
-}*/
-
 .projectDescription {
-	width: 80%;	
-	margin: 0 auto 40px;
+	width: 70%;	
+	margin: 0 auto;
 	text-align: center;
+}
+
+.projects {
+	width: 40%;
+	padding: 1%;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
@@ -170,12 +171,17 @@ div.menu h2:hover {
 	color: #07C9F5;
 }
 
-
-/*.projects {
-	text-align: center;
-	width: 50%;
+#startPitch {
+	width: 30%;
+	margin: 0 auto;
+	border: 1px solid black;
 }
-*/
+
+
+#startPitch:hover {
+	background-color: #07C9F5;
+}
+
 
 
 
