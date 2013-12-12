@@ -122,15 +122,10 @@ aside img {
 }
 
 .projectDescription {
-	width: 70%;	
+	width: 80%;
 	margin: 0 auto;
+	padding-bottom: 2%;
 	text-align: center;
-}
-
-.projects {
-	width: 40%;
-	padding: 1%;
-	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
