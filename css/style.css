@@ -121,12 +121,21 @@ aside img {
 	margin: 0 auto;
 }
 
+/* Remove this once you've update the main Projects page */
 .projectDescription {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 2%;
 	text-align: center;
 }
+
+section {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 10%;
+	text-align: center;
+}
+
 
 h1, h2, h3, h4, h5, h6, .accordion label {
 	font-family: 'Lato', sans-serif;
