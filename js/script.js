@@ -36,6 +36,10 @@ $(document).ready(function() {
   });
 
 
+  //Nivo Lightbox for Bookalokal page under Projects
+  $('a').nivoLightbox();
+
+
 
   
 
