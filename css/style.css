@@ -37,7 +37,7 @@ footer {
 	text-align: center;
 }
 
-/******************** START Nav Style ********************/
+/******************** Nav Style ********************/
 
 nav {
 	padding: 2% 1% 0 1%;
@@ -91,7 +91,7 @@ nav img:hover {
 }
 
 
-/******************** END Nav Style ********************/
+/********* Aside *********/
 
 aside {
 	float: left;
@@ -115,27 +115,12 @@ aside img {
 	box-shadow: 0 0 10px #777; 
 }
 
+/****** Main Content ********/
 .content {
 	width: 70%;
 	padding: 1%;
 	margin: 0 auto;
 }
-
-/* Remove this once you've update the main Projects page */
-.projectDescription {
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 2%;
-	text-align: center;
-}
-
-section {
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 10%;
-	text-align: center;
-}
-
 
 h1, h2, h3, h4, h5, h6, .accordion label {
 	font-family: 'Lato', sans-serif;
@@ -158,6 +143,7 @@ p {
 	font-size: 1.2em;
 }
 
+/****** Links and Hover ******/
 a:link, a:active, a:visited {
 	color: inherit;
 	text-decoration: underline;
@@ -172,10 +158,43 @@ a:hover {
 	outline: 0;
 }
 
+/***** Blog page *****/
 div.menu h2:hover {
 	color: #07C9F5;
 }
 
+/**** Project Sections ****/
+section {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.description {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.caption {
+	font-size: 1em;
+}
+
+.lightbox img {
+	padding: 0 1% 1% 0;
+}
+
+/* Remove this once you've update the main Projects page */
+.projectDescription {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+
+
+/****** Madlibs Project ******/
 #startPitch {
 	width: 30%;
 	margin: 0 auto;

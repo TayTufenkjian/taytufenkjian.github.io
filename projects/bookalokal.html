@@ -13,10 +13,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type='text/javascript' src='../js/script.js'></script>
-	<!--Nivo Slider items-->
-	<link rel="stylesheet" href="../js/nivo-slider/nivo-slider.css" type="text/css" />
-	<link rel="stylesheet" href="../js/nivo-slider/themes/default/default.css" type="text/css" />
-	<script src="../js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 	<!--Nivo Lightbox items-->
 	<link rel="stylesheet" href="../js/Nivo-Lightbox-1.1/nivo-lightbox.css" type="text/css" />
 	<link rel="stylesheet" href="../js/Nivo-Lightbox-1.1/themes/default/default.css" type="text/css" />
@@ -38,7 +34,7 @@
 				<nav>
 					<ul>
 						<li><a href="../index.html">Tay Tufenkjian</a></li>
-						<li><a href="../projects.html">Projects</a></li>
+						<li class="active"><a href="../projects.html">Projects</a></li>
 						<li><a href="../thoughts.html">Thoughts</a></li>
 							<li class="socialMedia">
 							<a href="https://twitter.com/TayTufenkjian"><img src="../images/twitter3.png" alt="Twitter icon"/></a>
@@ -51,84 +47,59 @@
 				<hr>		
 			</header>
 
-			<div class="content">
-					<section>
-						<h2>Bookalokal Photo Sharing</h2>
+			<div>
+				<section>
+					<h2>Bookalokal Photo Sharing</h2>
+					<div class = "description">
 						<p>At Startup Institute, I joined a cross-functional team to design additional features for the food experience platform of a partner company called <a href="http://bookalokal.com/" target="_blank">Bookalokal.</a></p>
 
 						<p>I owned the photo sharing designs. The task: how could guests and hosts use the Bookalokal platform to share photos from their events?</p>
 
 						<p>We started with some basic user flow.</p>
-
-						<figure>
-							<img src="images/Bookalokal/BaL-photoShare-userFlow.jpg">
-							<figcaption>In the soft glare of the sunroof, one of our devs works on a promo code plugin. <br> A little whiteboard goes a long way.</figcaption>
-						</figure>
-					</section>
-				
-					<section>
+					</div>
+					<figure>
+						<img src="images/Bookalokal/BaL-photoShare-userFlow.jpg">
+						<figcaption>In the soft glare of the skylight, one of our devs works on a promo code plugin. <br> A little whiteboard goes a long way.</figcaption>
+					</figure>
+				</section>
+			
+				<section>
+					<div class="description">
 						<p>Next up, wireframes. No better way to learn Balsamiq.</p> 
 
-						<p>Then we learned about InVision for prototyping and had too much fun adding hotspots.</p>
-						<iframe src="http://projects.invisionapp.com/share/XYK76BNH#/screens" width="100%" height="600px"></iframe>
-					</section>
-
-					<section>
-					<p>The final product was a clean set of final mockups. I had never used Photoshop before, but it was time to learn quickly.</p>	
-
-					<a href="images/Bookalokal/BaL-share-photos-dashboard.jpg" title="This is an image title"><img src="images/Bookalokal/thumbnails/BaL-share-photos-dashboard.jpg" alt="" /></a>
-
-					<!--Nivo Slider images for Bookalokal mockups-->	
-<!-- 
-				 	<div class="slider-wrapper theme-default">
-	    				<div class="ribbon"></div>
-							<div id="slider" class="nivoSlider">
-								<a href="../images/Bookalokal-mockups-lg/BaL-landing-photos.jpg"><img src="images/Bookalokal-mockups-lg/BaL-landing-photos.jpg" alt="Landing page mockup" title="#captionLandingPage"/></a>
-
-								<img src="../images/Bookalokal-mockups-lg/BaL-share-photos-dashboard.jpg" alt="Share photos from dashboard mockup" title="#captionDashboard"/>
-								
-								<img src="../images/Bookalokal-mockups-lg/BaL-past-meals.jpg" alt="Share photo from past meals mockup" title="#captionPastMeals"/>
-
-								<img src="../images/Bookalokal-mockups-lg/BaL-name-your-photo.jpg" alt="Name your photo mockup" title="#captionNamePhoto"/>
-								
-								<img src="../images/Bookalokal-mockups-lg/BaL-photo-success.jpg" alt="Photo upload success mockup" title="#captionPhotoSuccess"/>				
-							
-								<img src="../images/Bookalokal-mockups-lg/BaL-Lokal-Board.jpg" alt="Lokal Board mockup" title="#captionLokalBoard"/>
-
-								<img src="../images/Bookalokal-mockups-lg/BaL-Lokal-Board-photo-detail.jpg" alt="Photo detail page mockup" title="#captionPhotoDetail"/>			
-
-								<img src="../images/Bookalokal-mockups-lg/BaL-photos-on-profile.jpg" alt="View photos on profile mockup" title="#captionPhotosProfile"/>
-							</div>
-					  	</div>
+						<p>We learned about InVision for prototyping just in time.</p>
 					</div>
- -->
-					<!-- Nivo Slider captions for Bookalokal mockups -->
-					<!-- <div id="captionLandingPage" class="nivo-html-caption">
-	    				Landing page
+					<iframe src="http://projects.invisionapp.com/share/XYK76BNH#/screens" width="100%" height="600px"></iframe>
+					<p class="caption">Go ahead, click the hotspots! We did.</p>
+				</section>
+
+				<section>
+					<div class="description">
+						<p>The final product was a clean set of final mockups. I had never used Photoshop before, but it was time to learn quickly.</p>	
 					</div>
-					<div id="captionDashboard" class="nivo-html-caption">
-						Share photos from dashboard
+					<!-- Nivo Lightbox -->
+					<div class="lightbox">
+						<a href="images/Bookalokal/BaL-share-photos-dashboard.jpg" data-lightbox-gallery="gallery1" title="Share photos from dashboard"><img src="images/Bookalokal/thumbnails/BaL-share-photos-dashboard.jpg" alt="Share photos from dashboard"/></a>
+
+						<a href="images/Bookalokal/BaL-past-meals.jpg" data-lightbox-gallery="gallery1" title="Share photos from past meals"><img src="images/Bookalokal/thumbnails/BaL-past-meals.jpg" alt="Share photos from past meals"/></a>
+
+						<a href="images/Bookalokal/BaL-name-your-photo.jpg" data-lightbox-gallery="gallery1" title="Name your photo"><img src="images/Bookalokal/thumbnails/BaL-name-your-photo.jpg" alt="Name your photo"/></a>
+
+						<a href="images/Bookalokal/BaL-photo-success.jpg" data-lightbox-gallery="gallery1" title="Photo upload success"><img src="images/Bookalokal/thumbnails/BaL-photo-success.jpg" alt="Photo upload success"/></a>
+
+						<a href="images/Bookalokal/BaL-photos-on-profile.jpg" data-lightbox-gallery="gallery1" title="View photos on profile"><img src="images/Bookalokal/thumbnails/BaL-photos-on-profile.jpg" alt="View photos on profile"/></a>
+
+						<a href="images/Bookalokal/BaL-Lokal-Board.jpg" data-lightbox-gallery="gallery1" title="Lokal Board"><img src="images/Bookalokal/thumbnails/BaL-Lokal-Board.jpg" alt="Lokal Board"/></a>
+
+						<a href="images/Bookalokal/BaL-Lokal-Board-photo-detail.jpg" data-lightbox-gallery="gallery1" title="Photo detail"><img src="images/Bookalokal/thumbnails/BaL-Lokal-Board-photo-detail.jpg" alt="Photo detail"/></a>
+
+						<a href="images/Bookalokal/BaL-Event-Board.jpg" data-lightbox-gallery="gallery1" title="Event Board"><img src="images/Bookalokal/thumbnails/BaL-Event-Board.jpg" alt="Event Board"/></a>
+
+						<a href="images/Bookalokal/BaL-landing-photos.jpg" data-lightbox-gallery="gallery1" title="Find photos from landing page"><img src="images/Bookalokal/thumbnails/BaL-landing-photos.jpg" alt="Find photos from landing page"/></a>
+
+						<p class="caption">Yes, my first Photoshop experiments are on the web. No regrets.</p>
 					</div>
-					<div id="captionPastMeals" class="nivo-html-caption">
-	    				Share photos from past meals
-					</div>	
-					<div id="captionNamePhoto" class="nivo-html-caption">
-	    				Name your photo
-					</div>		
-					<div id="captionPhotoSuccess" class="nivo-html-caption">
-	    				Photo uploaded successfully
-					</div>	
-					<div id="captionLokalBoard" class="nivo-html-caption">
-	    				Lokal Board
-					</div>
-					<div id="captionPhotoDetail" class="nivo-html-caption">
-	    				Photo detail page
-					</div>	
-					
-					<div id="captionPhotosProfile" class="nivo-html-caption">
-	    				View photos on profile
-					</div>	 -->
-					</section>	
+				</section>	
 			</div>
 			<footer class="content">
 				<hr>
