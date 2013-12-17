@@ -29,26 +29,13 @@ $(document).ready(function() {
   // Personal Pitch Madlib
   // I'm a (firstNoun) looking for (secondNoun) at a (adjective) company 
   // where I can use my skills in (thirdNoun) to (verb).
-
-  //Nivo Slider for Projects page
-  $(window).load(function() {
-      $("#slider").nivoSlider();
-    });
-
-  });
-
-
-
-
-
-
-  
+ 
 
 //accordion menu for Thoughts page
   $(".menu").accordion({collapsible: true, active: false, heightStyle: "content"});   
 
 
-
+});
 
 
 

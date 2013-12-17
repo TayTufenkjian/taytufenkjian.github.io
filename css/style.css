@@ -20,7 +20,7 @@ body {
 	margin: 0 auto;
 }
 
-header hr, footer hr {	
+hr {	
 	border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -163,6 +163,33 @@ div.menu h2:hover {
 	color: #07C9F5;
 }
 
+
+/**** Project Page ****/
+article {
+	margin: 2% auto 10% auto;
+	text-align: center;
+}
+
+article.project img {
+	width: 600px;
+}
+
+.shadow {
+  -moz-box-shadow:    1px 1px 6px #555;
+  -webkit-box-shadow: 1px 1px 6px #555;
+  box-shadow:         1px 1px 6px #555;
+}
+
+.projectCaption {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a.projectTitle {
+	text-decoration: none;
+}
+
 /**** Project Sections ****/
 section {
 	width: 80%;
@@ -183,15 +210,6 @@ section {
 .lightbox img {
 	padding: 0 1% 1% 0;
 }
-
-/* Remove this once you've update the main Projects page */
-.projectDescription {
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 2%;
-	text-align: center;
-}
-
 
 
 /****** Madlibs Project ******/
