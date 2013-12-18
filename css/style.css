@@ -213,21 +213,36 @@ section {
 
 
 /****** Madlibs Project ******/
-#startPitch {
+#pitch {
 	width: 30%;
 	margin: 0 auto;
 	border: 1px solid black;
 	text-align: center;
+	background: white;
 }
 
 
-#startPitch:hover {
+#pitch:hover {
 	background-color: #07C9F5;
 }
 
 form {
+	margin: 0 auto;
+}
+
+form ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
 	text-align: center;
 }
 
+form ul li {
+	margin: 3% auto;
+}
 
-
+input {
+	display: inline-block;
+	text-align: center;
+	width: 60%;
+}
