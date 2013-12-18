@@ -24,6 +24,18 @@
 	  ga('send', 'pageview');
 	</script>
 
+	<script type="text/javascript">
+	function processPitch(form) {  
+    var firstNoun = form.firstNoun.value;
+    var secondNoun = form.secondNoun.value;
+    var adjective = form.adjective.value;
+    var thirdNoun = form.thirdNoun.value;
+    var verb = form.verb.value;
+    alert("I'm a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+	}
+	</script>
+
+
 </head>
 <body>
 	<div class="container">
@@ -47,7 +59,7 @@
 		<div class="content">		
 			<article class="project">
 				<!--image here -->
-				<img src="images/Event-board-crop.jpg" class="shadow">
+				<img src="images/Event-board-crop.jpg" class="shadow" alt="Event board image">
 				<div class="projectCaption">			
 					<a href="projects/bookalokal.html" class="projectTitle"><h3>Bookalokal Photo Sharing</h3></a>
 					<hr>
@@ -56,17 +68,34 @@
 			</article>
 
 			
-			<h1 class="projectCaption">[In the works]</h1>
+			
 			<article>
 				<!--image here -->
 				<div class="projectCaption">
 					<h3>Personal Pitch Madlibs</h3>
 					<hr>
 					<p>One of the final milestones at Startup Institute is Student Expose, an event where students give their 60-second personal pitches to a hundred people in the local startup community.  While writing my own pitch, I worked on a madlibs version to avoid taking myself too seriously.</p>
+
+					<form name="pitchInput" action="#" method="get">
+				<ul>
+					<li><input type="text" name="firstNoun"  placeholder="Enter a noun (person, place, or thing)."/></li>
+					
+					<li><input type="text" name="secondNoun" placeholder="Enter another noun."/></li>
+
+					<li><input type="text" name="adjective" placeholder="How about an adjective?"/></li>
+
+					<li><input type="text" name="thirdNoun" placeholder="Time for one more noun." /></li>
+
+					<li><input type="text" name="verb" placeholder="Now clench it with a verb."/></li>
+
+					<li><input type="button" name="button" value="Pitch" id="pitch" onClick="processPitch(this.form)"/></li>
+				</ul>
+			</form>
+
 				</div>
 			</article>
 						
-
+			<h1 class="projectCaption">[In the works]</h1>
 			<article>
 				<!-- image here -->
 				<div class="projectCaption">	
