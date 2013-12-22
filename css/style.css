@@ -14,11 +14,11 @@ body {
 	font-size: 1em;
 }
 
-.container {
+/*.container {
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
-}
+}*/
 
 hr {	
 	border: 0;
@@ -32,35 +32,52 @@ header hr {
 	margin-left: -50%;
 }
 
+
+/************ Footer Contact Info ************/
 footer {
 	font-size: 1em;
 	text-align: center;
 }
 
-/******************** Nav Style ********************/
+footer li {
+	margin: 0 auto;
+	padding: 1% 0;
+	list-style: none;
+}
 
+.socialMedia img {
+	opacity: 0.2;
+	margin-right: 2px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+	border-radius: 50%;
+}
+
+.socialMedia img:hover {
+	background-color:  #07C9F5;
+	background-size: 30px 30px;
+	opacity: 1;
+}
+
+
+/******************** Nav Style ********************/
 nav {
-	padding: 2% 1% 0 1%;
-	margin: 20px auto;
-	width: 70%;
+	margin: 0 auto;
+	padding: 2% 0;
 	font-family: 'Lato', sans-serif;
 	font-weight: '400';
+	text-align: center;
 }
 
 nav ul {
 	margin: 0 auto;
 	width: 100%;
-	padding: 0;
 	list-style: none;
 }
 
 nav ul li {
 	display: inline;
 	padding: 5% 5% 5% 0;
-}
-
-.socialMedia {
-	text-align: right;
 }
 
 nav a:link, a:active a:visited {
@@ -73,38 +90,7 @@ nav a:hover, nav li.active {
 	text-decoration: none;
 }
 
-nav img {
-	float: right;
-	opacity: 0.2;
-	margin-right: 2px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%; 
-	border-radius: 50%;
-	margin-top: -5px;
-}
-
-
-nav img:hover {
-	background-color:  #07C9F5;
-	background-size: 30px 30px;
-	opacity: 1;
-}
-
-
-/********* Aside *********/
-
-aside {
-	float: left;
-	height: 100%;
-	margin: 0 auto;
-	padding: 2%;
-}
-
-aside img {
-	display: block;
-	margin: 20% auto;
-}
-
+/****** Main Content ********/
 #profilePic {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%; 
@@ -113,12 +99,18 @@ aside img {
 	-moz-box-shadow: 0 0 10px #777;
 	-webkit-box-shadow: 0 0 10px #777;
 	box-shadow: 0 0 10px #777; 
+	display: block;
+	margin: 0 auto;
 }
 
-/****** Main Content ********/
 .content {
-	width: 70%;
+	width: 80%;
 	padding: 1%;
+	margin: 0 auto;
+}
+
+.hello {
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -141,6 +133,12 @@ h3 {
 
 p {
 	font-size: 1.2em;
+}
+
+.twitter-timeline {
+	height: 300px;
+	display: block;
+	margin: 0 auto;
 }
 
 /****** Links and Hover ******/
@@ -191,7 +189,7 @@ a.projectTitle {
 }
 
 /**** Project Sections ****/
-section {
+section.project {
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 5%;
