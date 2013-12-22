@@ -109,9 +109,20 @@ nav a:hover, nav li.active {
 	margin: 0 auto;
 }
 
+section {
+	margin: 0 auto 5% auto;
+}
+
 .hello {
-	width: 80%;
-	margin: 0 auto;
+	width: 50%;
+}
+
+.hello p {
+	font-size: 1.5em;
+}
+
+.sectionTitle {
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
