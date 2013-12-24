@@ -26,27 +26,29 @@
 </head>
 <body>
 	<header>
-		<nav>	
-<!-- 			<div id="TforTay">
-				<p>T</p>
-			</div>	 -->	
+		<nav class="wrapper bkgWhite">		
+			<div class="colCenter">
 			<ul>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="profile.html">Profile</a></li>				
-				<li><a href="thoughts.html">Thoughts</a></li>	
-			</ul> 
+				<li class="col3"><a href="projects.html">Projects</a></li>
+				<li class="col3"><a href="profile.html">Profile</a></li>				
+				<li class="col3"><a href="thoughts.html">Thoughts</a></li>	
+			</ul>
+			</div> 
 		</nav>	
 	</header>
-	<div class="lightPanel">
-		<div class="content">
-			<section class="hello">	
+	<div class="wrapper bkgLight">
+		<div class="colCenter">
+			<section id="hello">	
 				<img src="images/profilepic.jpg" id="profilePic" alt="Profile picture"/>
 				<h3 class="sectionTitle">Hello</h3>	
-				<p>I'm Tay Tufenkjian, a product and web designer based in New York City. I create experiences that help people redefine the limits of who they are and what they can do.</p> 
+				<p>I'm Tay Tufenkjian, a product and web designer based in New York City. 
+
+				<p>I create experiences that help people redefine the limits of who they are and what they can do.</p> 
+
 				<p>I'm always looking for new projects and would love to hear from you. <a href="mailto:taytuf@gmail.com">Email me</a> to collaborate.</p>		
 				
 				<a href="profile.html" class="button">
-				<div class="seeMore">
+				<div class="viewMore">
 					VIEW PROFILE
 				</div>
 				</a>
@@ -54,43 +56,42 @@
 		</div>
 	</div>
 
-	<div class="darkPanel">
-		<div class="content">
-			<section class="selectedProjects">
+	<div class="wrapper bkgDark">
+		<div class="colCenter">
+			<section id="selectedProjects">
 				<h3 class="sectionTitle">Selected Projects</h3>	
 				<img src="images/Event-board-crop.jpg" alt="Event board image">
 				
 				<a href="profile.html" class="button">
-				<div class="seeMore">
+				<div class="viewMore">
 					VIEW ALL PROJECTS
 				</div>
 				</a>
 			</section>
 		</div>
 	</div>
-
-		<section testTweets>
-			<div id="example1"></div>
-    		<div id="example2"></div>
-
-		</section>
-		<section class="Twitter">
-			<a class="twitter-timeline" href="https://twitter.com/TayTufenkjian" data-widget-id="414797699762765824" data-chrome="noborders noheader nofooter transparent noscrollbar" data-tweet-limit="3">Tweets by @TayTufenkjian</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</section>
+	<div class="wrapper bkgWhite">
+		<div class="colCenter">
+			<section id="Twitter">
+				<a class="twitter-timeline" href="https://twitter.com/TayTufenkjian" data-widget-id="414797699762765824" data-chrome="noborders noheader nofooter transparent noscrollbar" data-tweet-limit="3">Tweets by @TayTufenkjian</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</section>
+		</div>
 	</div>
-	<footer>
+	<footer class="wrapper">
 		<hr>
-		<ul>
-			<li>Let's build something.</li>
-			<li><a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a></li>
-			<li class="socialMedia">
-				<a href="https://twitter.com/TayTufenkjian"><img src="images/twitter3.png" alt="Twitter icon"/></a>
-				<a href="http://www.linkedin.com/in/taytufenkjian"><img src="images/linkedin-square.png" alt="LinkedIn icon"/></a>
-				<a href="https://github.com/TayTufenkjian"><img src="images/github3.png" alt="Github icon"/></a>
-			</li>
-			<li>2013</li>
-		</ul>
+		<div class="colCenter">	
+			<ul>
+				<li><h3>Get in touch</h3></li>
+				<li><a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a></li>
+				<li class="socialMedia">
+					<a href="https://twitter.com/TayTufenkjian"><img src="images/twitter3.png" alt="Twitter icon"/></a>
+					<a href="http://www.linkedin.com/in/taytufenkjian"><img src="images/linkedin-square.png" alt="LinkedIn icon"/></a>
+					<a href="https://github.com/TayTufenkjian"><img src="images/github3.png" alt="Github icon"/></a>
+				</li>
+				<li>2013</li>
+			</ul>
+		</div>
 	</footer>
 </body>
 

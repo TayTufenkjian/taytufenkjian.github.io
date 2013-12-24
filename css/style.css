@@ -14,11 +14,19 @@ body {
 	font-size: 1em;
 }
 
-/*.container {
-	width: 80%;
-	height: 100%;
+.wrapper {
+	width: 100%;
+}
+
+.colCenter {
+	width: 90%;
 	margin: 0 auto;
-}*/
+}
+
+.col3 {
+	width: 33%;
+}
+
 
 hr {	
 	border: 0;
@@ -27,9 +35,8 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-header hr {
-	width: 165%;
-	margin-left: -50%;
+ul {
+	padding: 0;
 }
 
 
@@ -63,29 +70,25 @@ footer li {
 /******************** Nav Style ********************/
 nav {
 	margin: 0 auto;
-	padding: 2% 0;
+	height: 100px;
+	line-height: 100px;
 	font-family: 'Lato', sans-serif;
 	font-weight: '400';
 	border-bottom: 1px solid #07C9F5;
 }
 
-#TforTay {
-	position: fixed;
-	z-index: 1;
-	text-align: left;
-}
-
 nav ul {
-	width: 45%;
 	margin: 0 auto;
-	width: 100%;
 	list-style: none;
-		text-align: center;
+	width: 60%;
 }
 
-nav ul li {
-	display: inline;
-	padding: 5% 5% 5% 0;
+nav li {
+	display: block;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 nav a:link, a:active a:visited {
@@ -111,56 +114,55 @@ nav a:hover, nav li.active {
 	margin: 0 auto;
 }
 
-.darkPanel {
+.bkgWhite {
+	background: white;
+}
+
+.bkgDark {
 	background-image: url("../images/debut_dark.png");
 	color: white;
 
 }
 
-.lightPanel {
+.bkgLight {
 	background: #F7F7F7;
-}
-
-.content {
-	width: 90%;
-	padding: 1%;
-	margin: 0 auto;
 }
 
 
 section {
-	margin: 0 auto 5% auto;
-}
-
-.seeMore {
-	border: 1px solid #07C9F5;
-	/*-moz-box-shadow: 3px 3px 0 #07C9F5;
-	-webkit-box-shadow: 3px 3px 0 #07C9F5;
-	box-shadow: 3px 3px 0 #07C9F5; */
-	color: #07C9F5;
-	font-family: 'Lato', sans-serif;
-	font-weight: 200;
-	padding: 10px;
-	text-align: center;
-	width: 200px;
-	margin: 3% auto 0 auto;
-
-}
-
-.seeMore:hover {
-	background: #07C9F5;
-	color: white;
+	padding: 3% 0;
 }
 
 section a.button {
 	text-decoration: none;
 } 
 
-.hello {
-	width: 50%;
+.viewMore {
+	border: 2px solid #07C9F5;
+	/*-moz-box-shadow: 3px 3px 0 #07C9F5;
+	-webkit-box-shadow: 3px 3px 0 #07C9F5;
+	box-shadow: 3px 3px 0 #07C9F5; */
+	color: #07C9F5;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 15px;
+	text-align: center;
+	width: 200px;
+	margin: 5% auto 0 auto;
+
 }
 
-.hello p {
+.viewMore:hover {
+	background: #07C9F5;
+	color: white;
+}
+
+#hello {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#hello p {
 	font-size: 1.5em;
 }
 
@@ -168,13 +170,13 @@ section a.button {
 	text-align: center;
 }
 
-section.selectedProjects img {
+#selectedProjects img {
 	width: 600px;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
 	font-family: 'Lato', sans-serif;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 h1 {
