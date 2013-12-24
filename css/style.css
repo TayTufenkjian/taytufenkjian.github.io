@@ -67,7 +67,6 @@ nav {
 	font-family: 'Lato', sans-serif;
 	font-weight: '400';
 	border-bottom: 1px solid #07C9F5;
-
 }
 
 #TforTay {
@@ -77,6 +76,7 @@ nav {
 }
 
 nav ul {
+	width: 45%;
 	margin: 0 auto;
 	width: 100%;
 	list-style: none;
