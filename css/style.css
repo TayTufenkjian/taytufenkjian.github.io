@@ -42,7 +42,6 @@ ul {
 
 /************ Footer Contact Info ************/
 footer {
-	font-size: 1em;
 	text-align: center;
 }
 
@@ -50,6 +49,7 @@ footer li {
 	margin: 0 auto;
 	padding: 1% 0;
 	list-style: none;
+	font-size: 20px;
 }
 
 .socialMedia img {
@@ -74,7 +74,6 @@ nav {
 	line-height: 100px;
 	font-family: 'Lato', sans-serif;
 	font-weight: '400';
-	border-bottom: 1px solid #07C9F5;
 }
 
 nav ul {
@@ -118,6 +117,11 @@ nav a:hover, nav li.active {
 	background: white;
 }
 
+.bkgBlue {
+	background: #07C9F5;
+	color: white;
+}
+
 .bkgDark {
 	background-image: url("../images/debut_dark.png");
 	color: white;
@@ -128,9 +132,12 @@ nav a:hover, nav li.active {
 	background: #F7F7F7;
 }
 
+.coatOfArms {
+	height: 150px;
+}
 
 section {
-	padding: 3% 0;
+	padding: 5% 0;
 }
 
 section a.button {
@@ -138,23 +145,39 @@ section a.button {
 } 
 
 .viewMore {
-	border: 2px solid #07C9F5;
+	width: 250px;
+	margin: 5% auto 0 auto;
+	padding: 15px;
+	border: 3px solid #07C9F5;
 	/*-moz-box-shadow: 3px 3px 0 #07C9F5;
 	-webkit-box-shadow: 3px 3px 0 #07C9F5;
 	box-shadow: 3px 3px 0 #07C9F5; */
 	color: #07C9F5;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	padding: 15px;
+	font-size: 1.2em;
 	text-align: center;
-	width: 200px;
-	margin: 5% auto 0 auto;
-
+	text-transform: uppercase;
 }
 
 .viewMore:hover {
 	background: #07C9F5;
 	color: white;
+}
+
+div.bkgBlue div.viewMore {
+	color: #333;
+	border: 3px solid #333;
+}
+
+div.bkgBlue div.viewMore:hover {
+	color: white;
+	background: #333;
+}	
+
+
+.sectionTitle {
+	text-align: center;
 }
 
 #hello {
@@ -166,12 +189,12 @@ section a.button {
 	font-size: 1.5em;
 }
 
-.sectionTitle {
-	text-align: center;
-}
-
 #selectedProjects img {
 	width: 600px;
+}
+
+#selectedThoughts {
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, .accordion label {
@@ -192,13 +215,7 @@ h3 {
 }
 
 p {
-	font-size: 1.2em;
-}
-
-.twitter-timeline {
-	height: 300px;
-	display: block;
-	margin: 0 auto;
+	font-size: 16px;
 }
 
 /****** Links and Hover ******/
