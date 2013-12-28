@@ -23,6 +23,10 @@ body {
 	margin: 0 auto;
 }
 
+.col2 {
+	width: 50%;
+}
+
 .col3 {
 	width: 33%;
 }
@@ -100,6 +104,21 @@ nav a:hover, nav li.active {
 	text-decoration: none;
 }
 
+#homeName {
+	position: fixed;
+	font-size: 3em;
+	text-align:center;  
+	/* circle */
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border: 1px solid black;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
 /****** Main Content ********/
 #profilePic {
 	-webkit-border-radius: 50%;
@@ -134,6 +153,11 @@ nav a:hover, nav li.active {
 
 .coatOfArms {
 	height: 150px;
+	font-size: 7em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300; 
+	text-align: center;
+/*	letter-spacing: 20%;*/
 }
 
 section {
@@ -215,7 +239,7 @@ h3 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 /****** Links and Hover ******/
