@@ -1,0 +1,27 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-image: url('Sunset_Marina.JPG');	
+	background-repeat: no-repeat;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+img {
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	padding: 20px;
+}

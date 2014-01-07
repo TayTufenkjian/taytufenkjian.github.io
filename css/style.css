@@ -16,6 +16,7 @@ body {
 
 .wrapper {
 	width: 100%;
+	margin: 0;
 }
 
 .colCenter {
@@ -29,6 +30,10 @@ body {
 
 .col3 {
 	width: 33%;
+}
+
+.col4 {
+	width: 25%;
 }
 
 
@@ -74,22 +79,25 @@ footer li {
 /******************** Nav Style ********************/
 nav {
 	margin: 0 auto;
-	height: 100px;
-	line-height: 100px;
+	height: 75px;
+	line-height: 75px;
 	font-family: 'Lato', sans-serif;
-	font-weight: '400';
+	font-weight: 300;
+	border-bottom: solid 2px #333;
+	position: fixed;
 }
 
 nav ul {
 	margin: 0 auto;
 	list-style: none;
-	width: 60%;
+	display: inline;
+	float: right;
+	width: 40%;
 }
 
 nav li {
 	display: block;
 	float: left;
-	width: 33.3%;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -99,27 +107,29 @@ nav a:link, a:active a:visited {
 	text-decoration: none;
 }
 
-nav a:hover, nav li.active {
+nav li:hover, nav li:active {
+	background: #333;
 	color: #07C9F5;
+}
+
+nav a:hover {
 	text-decoration: none;
 }
 
 #homeName {
-	position: fixed;
-	font-size: 3em;
-	text-align:center;  
-	/* circle */
-    width:50px;
-    height:50px;
-    line-height:50px;
-    border: 1px solid black;
-    -webkit-border-radius: 50%;
-	-moz-border-radius: 50%; 
-	border-radius: 50%;
-	margin-top: 20px;
+	display: inline-block; 
+	float: left;
+	font-size: 2em;
+	padding: 0 2%;
 }
 
+
 /****** Main Content ********/
+
+.firstContent {
+	padding-top: 100px;
+}
+
 #profilePic {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%; 
@@ -142,6 +152,12 @@ nav a:hover, nav li.active {
 }
 
 .bkgDark {
+	background: #333;
+	color: white;
+
+}
+
+.bkgDarkTexture {
 	background-image: url("../images/debut_dark.png");
 	color: white;
 
@@ -151,17 +167,9 @@ nav a:hover, nav li.active {
 	background: #F7F7F7;
 }
 
-.coatOfArms {
-	height: 150px;
-	font-size: 7em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300; 
-	text-align: center;
-/*	letter-spacing: 20%;*/
-}
-
 section {
 	padding: 5% 0;
+
 }
 
 section a.button {
@@ -173,7 +181,7 @@ section a.button {
 	margin: 5% auto 0 auto;
 	padding: 15px;
 	border: 3px solid #07C9F5;
-	/*-moz-box-shadow: 3px 3px 0 #07C9F5;
+/*	-moz-box-shadow: 3px 3px 0 #07C9F5;
 	-webkit-box-shadow: 3px 3px 0 #07C9F5;
 	box-shadow: 3px 3px 0 #07C9F5; */
 	color: #07C9F5;
