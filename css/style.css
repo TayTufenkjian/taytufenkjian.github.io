@@ -105,20 +105,9 @@ nav ul {
 	width: 40%;
 }
 
-.navProjectsPage {
-	float: right;
-	width: 40%;
-}
-
 nav li {
 	display: block;
 	float: left;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-div.navProjectsPage div {
-	float: right;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -128,7 +117,7 @@ nav a:link, a:active a:visited {
 	text-decoration: none;
 }
 
-nav li:hover, div.navProjectsPage div:hover {
+nav li:hover {
 	background: #333;
 	color: #07C9F5;
 }
@@ -273,11 +262,24 @@ a:hover {
 .projectPage {
 	width: 80%;
 	margin: 0 auto;
-	padding-bottom: 5%;
+	padding: 5% 0;
 }
 
-div.projectPage h1 {
+.projectTitle {
 	text-align: center;
+	color: white;
+	padding-bottom: 2%;
+	
+}
+
+.arrow-down {
+	content: "";
+	width: 0; 
+	height: 0; 
+	margin: 0 auto;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #07C9F5;
 }
 
 .projectDescription {
