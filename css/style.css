@@ -4,6 +4,8 @@
     -webkit-box-sizing: border-box;
 }
 
+
+
 html {
 	height: 100%;
 	width: 100%;
@@ -36,6 +38,13 @@ body {
 	width: 25%;
 }
 
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 
 hr {	
 	border: 0;
@@ -96,9 +105,20 @@ nav ul {
 	width: 40%;
 }
 
+.navProjectsPage {
+	float: right;
+	width: 40%;
+}
+
 nav li {
 	display: block;
 	float: left;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.navProjectsPage div {
+	float: right;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -108,7 +128,7 @@ nav a:link, a:active a:visited {
 	text-decoration: none;
 }
 
-nav li:hover, nav li:active {
+nav li:hover, div.navProjectsPage div:hover {
 	background: #333;
 	color: #07C9F5;
 }
@@ -171,10 +191,6 @@ nav a:hover {
 	background: #F7F7F7;
 }
 
-.clearFloat {
-	clear: both;
-}
-
 section {
 	padding: 5% 0;
 
@@ -201,22 +217,23 @@ section {
 	margin: 0 auto;
 	list-style: none;
 	display: block;
+	max-width: 525px;
+
 }
 
 #favThings li {
 	float: left;
-	padding-right: 5px;
 }
 
 #projects img {
-	width: 600px;
+	max-width: 100%;
 }
 
 #selectedThoughts {
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, .accordion label {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -252,60 +269,25 @@ a:hover {
 	outline: 0;
 }
 
-/***** Thoughts page *****/
-.thoughts {
-	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-div.menu h2:hover {
-	color: #07C9F5;
-}
-
-
-/**** Project Page ****/
-article {
-	margin: 2% auto 10% auto;
-	text-align: center;
-}
-
-article.project img {
-	width: 600px;
-}
-
-.shadow {
-  -moz-box-shadow:    1px 1px 6px #555;
-  -webkit-box-shadow: 1px 1px 6px #555;
-  box-shadow:         1px 1px 6px #555;
-}
-
-.projectCaption {
-	width: 70%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-a.projectTitle {
-	text-decoration: none;
-}
-
-/**** Project Sections ****/
-section.project {
+/**** Project Pages ****/
+.projectPage {
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 5%;
+}
+
+div.projectPage h1 {
 	text-align: center;
 }
 
-.description {
-	width: 80%;
+.projectDescription {
+	width: 60%;
 	margin: 0 auto;
 }
 
-.caption {
+/*.caption {
 	font-size: 1em;
-}
+}*/
 
 .lightbox img {
 	padding: 0 1% 1% 0;
@@ -316,9 +298,14 @@ section.project {
 #pitch {
 	width: 30%;
 	margin: 0 auto;
+	padding: 2% 0;
+	background: white;
 	border: 1px solid black;
 	text-align: center;
-	background: white;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 
@@ -345,4 +332,5 @@ input {
 	display: inline-block;
 	text-align: center;
 	width: 60%;
+	padding: 1%;
 }

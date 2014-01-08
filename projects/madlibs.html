@@ -3,16 +3,20 @@
 <head>
 	<title>Tay Tufenkjian</title>
 	<!--- Stylesheets -->
-	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/normalize.css" rel="stylesheet" type="text/css"/>
 	<!-- Fonts and favicon -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'/>
-	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-	<!--Scripts -->
+	<link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<!--General scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script type='text/javascript' src='js/script.js'></script>
+	<script type='text/javascript' src='../js/script.js'></script>
+	<!--Nivo Lightbox items-->
+	<link rel="stylesheet" href="../js/Nivo-Lightbox-1.1/nivo-lightbox.css" type="text/css" />
+	<link rel="stylesheet" href="../js/Nivo-Lightbox-1.1/themes/default/default.css" type="text/css" />
+	<script src="../js/Nivo-Lightbox-1.1/nivo-lightbox.min.js"></script>
 	<!--Google Analytics-->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,7 +27,6 @@
 	  ga('create', 'UA-46394305-1', 'taytufenkjian.com');
 	  ga('send', 'pageview');
 	</script>
-
 	<script type="text/javascript">
 	function processPitch(form) {  
     var firstNoun = form.firstNoun.value;
@@ -34,55 +37,48 @@
     alert("I'm a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
 	}
 	</script>
-
-
 </head>
 <body>
 	<header>
 		<nav class="wrapper bkgWhite">		
 			<div class="colCenter">
-				<a href="index.html"><div id="homeName">Tay Tufenkjian</div></a>
+				<a href="../index.html"><div id="homeName">Tay Tufenkjian</div></a>
 			<ul>
-				<a href="projects.html"><li class="col3">Projects</li></a>
-				<a href="profile.html"><li class="col3">Profile</li></a>				
-				<a href="thoughts.html"><li class="col3">Thoughts</li></a>	
+				<a href="../index.html#profile"><li class="col3">Profile</li></a>	
+				<a href="../index.html#projects"><li class="col3">Projects</li></a>
+				<a href="#contact"><li class="col3">Contact</li></a>
 			</ul>
 			</div> 
 		</nav>	
-	</header>			
-		<article>
-			<div class="projectCaption">
-				<h3>Personal Pitch Madlibs</h3>
-				<hr>
-				<p>One of the final milestones at Startup Institute is Student Expose, an event where students give their 60-second personal pitches to a hundred people in the local startup community.  While writing my own pitch, I worked on a madlibs version to avoid taking myself too seriously.</p>	
+	</header>
+		<div class="wrapper bkgLight">			
+			<div class="projectPage firstContent">
+				<h1>Personal Pitch Madlibs</h1>
+				<p class="projectDescription">One of the final milestones at Startup Institute is Student Expose, an event where students give their 60-second personal pitches to a hundred people in the local startup community.  While writing my own pitch, I worked on a madlibs version to avoid taking myself too seriously.</p>	
+				<form name="pitchInput" action="#" method="get">
+					<ul>
+					<li><input type="text" name="firstNoun"  placeholder="Enter a noun (person, place, or thing)."/></li>
+					<li><input type="text" name="secondNoun" placeholder="Enter another noun."/></li>
+					<li><input type="text" name="adjective" placeholder="How about an adjective?"/></li>
+					<li><input type="text" name="thirdNoun" placeholder="Time for one more noun." /></li>
+					<li><input type="text" name="verb" placeholder="Now clench it with a verb."/></li>
+					<li><input type="button" name="button" value="go pitch" id="pitch" onClick="processPitch(this.form)"/></li>
+					</ul>
+				</form>	
 			</div>
-			<form name="pitchInput" action="#" method="get">
-			<ul>
-				<li><input type="text" name="firstNoun"  placeholder="Enter a noun (person, place, or thing)."/></li>
-				
-				<li><input type="text" name="secondNoun" placeholder="Enter another noun."/></li>
-
-				<li><input type="text" name="adjective" placeholder="How about an adjective?"/></li>
-
-				<li><input type="text" name="thirdNoun" placeholder="Time for one more noun." /></li>
-
-				<li><input type="text" name="verb" placeholder="Now clench it with a verb."/></li>
-
-				<li><input type="button" name="button" value="Pitch" id="pitch" onClick="processPitch(this.form)"/></li>
-			</ul>
-		</form>
-		</article>		
+		</div>
 <footer class="wrapper">
 		<div class="colCenter">	
-			<h1 class="textCenter">Get in touch</h1>
-			<ul id="contact">
+			<h1 class="textCenter" id="contact">Get in touch</h1>
+			<ul>		
 				<li><a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a></li>
 				<li class="socialMedia">
-					<a href="https://twitter.com/TayTufenkjian"><img src="images/twitter3.png" alt="Twitter icon"/></a>
-					<a href="http://www.linkedin.com/in/taytufenkjian"><img src="images/linkedin-square.png" alt="LinkedIn icon"/></a>
-					<a href="https://github.com/TayTufenkjian"><img src="images/github3.png" alt="Github icon"/></a>
+					<a href="https://twitter.com/TayTufenkjian"><img src="../images/twitter3.png" alt="Twitter icon"/></a>
+					<a href="http://www.linkedin.com/in/taytufenkjian"><img src="../images/linkedin-square.png" alt="LinkedIn icon"/></a>
+					<a href="https://github.com/TayTufenkjian"><img src="../images/github3.png" alt="Github icon"/></a>
 				</li>
-				<li>2013</li>
+				<li>I&rsquo;m based in New York, NY.</li>
+				<li>2014</li>
 			</ul>
 		</div>
 	</footer>
