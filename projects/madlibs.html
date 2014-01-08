@@ -9,7 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'/>
 	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-	<!-- Scripts -->
+	<!--Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script type='text/javascript' src='js/script.js'></script>
@@ -23,6 +23,19 @@
 	  ga('create', 'UA-46394305-1', 'taytufenkjian.com');
 	  ga('send', 'pageview');
 	</script>
+
+	<script type="text/javascript">
+	function processPitch(form) {  
+    var firstNoun = form.firstNoun.value;
+    var secondNoun = form.secondNoun.value;
+    var adjective = form.adjective.value;
+    var thirdNoun = form.thirdNoun.value;
+    var verb = form.verb.value;
+    alert("I'm a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+	}
+	</script>
+
+
 </head>
 <body>
 	<header>
@@ -36,24 +49,33 @@
 			</ul>
 			</div> 
 		</nav>	
-	</header>
-	<div class="colCenter col2">	
-		<img src="images/profilepic.jpg" id="profilePic" alt="Profile picture"/>
-		<h4 class="sectionTitle">Pleased to meet you</h4>		
-		<p>I started out in edtech working for a company called <a href="http://2u.com/" target="_blank">2U</a> by way of a human resources internship. HR was a great place to learn how business works and how business software often doesn't.</p> 
-
-		<p>While researching HR and project management applications, I realized I had endless ideas and strong opinions about the user experience I wanted for my team. A designer by nature but not by training, I turned to <a href="http://startupinstitute.com/" target="_blank">Startup Institute</a>.</p>
-
-		<p>Products are more useful if they're also intuitive and irresistible.</p>
-
-		<p>The fun part about learning to code and design at this point in my life is that I can show you my progress in real time. I iterate daily.<p> 
-
-		<p>Here I share all the peaks and valleys of my learning curve.</p>
-	</div>
-	<footer class="wrapper">
-		<div class="colCenter">	
+	</header>			
+		<article>
+			<div class="projectCaption">
+				<h3>Personal Pitch Madlibs</h3>
+				<hr>
+				<p>One of the final milestones at Startup Institute is Student Expose, an event where students give their 60-second personal pitches to a hundred people in the local startup community.  While writing my own pitch, I worked on a madlibs version to avoid taking myself too seriously.</p>	
+			</div>
+			<form name="pitchInput" action="#" method="get">
 			<ul>
-				<li><h3>Get in touch</h3></li>
+				<li><input type="text" name="firstNoun"  placeholder="Enter a noun (person, place, or thing)."/></li>
+				
+				<li><input type="text" name="secondNoun" placeholder="Enter another noun."/></li>
+
+				<li><input type="text" name="adjective" placeholder="How about an adjective?"/></li>
+
+				<li><input type="text" name="thirdNoun" placeholder="Time for one more noun." /></li>
+
+				<li><input type="text" name="verb" placeholder="Now clench it with a verb."/></li>
+
+				<li><input type="button" name="button" value="Pitch" id="pitch" onClick="processPitch(this.form)"/></li>
+			</ul>
+		</form>
+		</article>		
+<footer class="wrapper">
+		<div class="colCenter">	
+			<h1 class="textCenter">Get in touch</h1>
+			<ul id="contact">
 				<li><a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a></li>
 				<li class="socialMedia">
 					<a href="https://twitter.com/TayTufenkjian"><img src="images/twitter3.png" alt="Twitter icon"/></a>

@@ -52,6 +52,7 @@ ul {
 /************ Footer Contact Info ************/
 footer {
 	text-align: center;
+	padding: 5% 0;
 }
 
 footer li {
@@ -160,11 +161,18 @@ nav a:hover {
 .bkgDarkTexture {
 	background-image: url("../images/debut_dark.png");
 	color: white;
+}
 
+.bkgLightTexture {
+	background-image: url("../images/light_wool.png");
 }
 
 .bkgLight {
 	background: #F7F7F7;
+}
+
+.clearFloat {
+	clear: both;
 }
 
 section {
@@ -172,56 +180,35 @@ section {
 
 }
 
-section a.button {
-	text-decoration: none;
-} 
-
-.viewMore {
-	width: 250px;
-	margin: 5% auto 0 auto;
-	padding: 15px;
-	border: 3px solid #07C9F5;
-/*	-moz-box-shadow: 3px 3px 0 #07C9F5;
-	-webkit-box-shadow: 3px 3px 0 #07C9F5;
-	box-shadow: 3px 3px 0 #07C9F5; */
-	color: #07C9F5;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 1.2em;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.viewMore:hover {
-	background: #07C9F5;
-	color: white;
-}
-
-div.bkgBlue div.viewMore {
-	color: #333;
-	border: 3px solid #333;
-}
-
-div.bkgBlue div.viewMore:hover {
-	color: white;
-	background: #333;
-}	
-
-
-.sectionTitle {
+.textCenter {
 	text-align: center;
 }
 
 #hello {
-	width: 50%;
 	margin: 0 auto;
 }
 
-#hello p {
+#profile {
+	margin: 0 auto;
+	width: 70%;
+}
+
+#profile p {
 	font-size: 1.5em;
 }
 
-#selectedProjects img {
+#favThings {
+	margin: 0 auto;
+	list-style: none;
+	display: block;
+}
+
+#favThings li {
+	float: left;
+	padding-right: 5px;
+}
+
+#projects img {
 	width: 600px;
 }
 
