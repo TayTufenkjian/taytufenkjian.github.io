@@ -198,10 +198,6 @@ section {
 	width: 70%;
 }
 
-#profile p {
-	font-size: 1.5em;
-}
-
 #favThings {
 	margin: 0 auto;
 	list-style: none;
@@ -222,7 +218,7 @@ section {
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, #pitchOutput {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -240,7 +236,7 @@ h3 {
 }
 
 p {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 /****** Links and Hover ******/
@@ -269,7 +265,7 @@ a:hover {
 	text-align: center;
 	color: white;
 	padding-bottom: 2%;
-	
+
 }
 
 /*.arrow-down {
@@ -336,3 +332,16 @@ input {
 	width: 60%;
 	padding: 1%;
 }
+
+#pitchOutput {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	padding: 2%;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+
