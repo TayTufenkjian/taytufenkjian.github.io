@@ -203,19 +203,36 @@ section {
 	list-style: none;
 	display: block;
 	max-width: 525px;
-
 }
 
 #favThings li {
 	float: left;
 }
 
-#projects img {
-	max-width: 100%;
+/*** Project Gallery adapted from Chris Coyier post: Seamless Responsive Photo Grid ***/
+#projectGallery {
+   /* altered to include gaps */   
+   line-height: 400%;
+   -webkit-column-count: 2;
+   -webkit-column-gap:   30px;
+   -moz-column-count:    2;
+   -moz-column-gap:      30px;
+   column-count:         2;
+   column-gap:           30px;
 }
 
-#selectedThoughts {
-	text-align: center;
+#projectGallery img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 800px) {
+  #projectGallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, #pitchOutput {
