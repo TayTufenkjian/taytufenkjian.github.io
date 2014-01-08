@@ -28,13 +28,20 @@
 	  ga('send', 'pageview');
 	</script>
 	<script type="text/javascript">
+	function resetForm($form) {
+    $form.find('input:text, input:password, input:file, select, textarea').val('');
+    $form.find('input:radio, input:checkbox')
+         .removeAttr('checked').removeAttr('selected');
+}
+
 	function processPitch(form) {  
     var firstNoun = form.firstNoun.value;
     var secondNoun = form.secondNoun.value;
     var adjective = form.adjective.value;
     var thirdNoun = form.thirdNoun.value;
     var verb = form.verb.value;
-    alert("I'm a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+    $('#pitchOutput').html("I'm a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+    resetForm($(form));
 	}
 	</script>
 </head>
@@ -68,6 +75,7 @@
 					<li><input type="button" name="button" value="go pitch" id="pitch" onClick="processPitch(this.form)"/></li>
 					</ul>
 				</form>	
+				<div id="pitchOutput"></div>
 			</div>
 		</div>
 <footer class="wrapper">

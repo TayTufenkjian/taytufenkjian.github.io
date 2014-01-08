@@ -272,7 +272,7 @@ a:hover {
 	
 }
 
-.arrow-down {
+/*.arrow-down {
 	content: "";
 	width: 0; 
 	height: 0; 
@@ -280,7 +280,7 @@ a:hover {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid #07C9F5;
-}
+}*/
 
 .projectDescription {
 	width: 60%;
