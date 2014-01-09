@@ -209,7 +209,7 @@ section {
 	float: left;
 }
 
-/*** Project Gallery adapted from Chris Coyier post: Seamless Responsive Photo Grid ***/
+/* Project Gallery adapted from Chris Coyier's post: "Seamless Responsive Photo Grid" */
 #projectGallery {
    /* altered to include gaps */   
    line-height: 400%;
@@ -222,8 +222,8 @@ section {
 }
 
 #projectGallery img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
+/*   Just in case there are inline attributes - Chris Coyier's original notes*/
+  max-width: 100% !important;
   height: auto !important;
 }
 
@@ -234,6 +234,36 @@ section {
   column-count:         1;
   }
 }
+
+#projectGallery figure {
+	position: relative;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+
+/* Caption on hover adapted from Chris Coyier's post: "A Really Nice Way To Handle Popup Information" */
+#projectGallery figcaption {
+	line-height: normal;
+	position: absolute;
+	right: 0; bottom: 0; left: 0;
+	background: rgba(0,0,0,0.75);
+	color: white; 
+	opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;  
+     -moz-transition: opacity 0.5s ease-out;  
+      -ms-transition: opacity 0.5s ease-out;  
+       -o-transition: opacity 0.5s ease-out;  
+          transition: opacity 0.5s ease-out;  
+}
+
+#projectGallery figure:hover figcaption {
+	display: block;
+	opacity: 1;
+}
+
 
 h1, h2, h3, h4, h5, h6, #pitchOutput {
 	font-family: 'Lato', sans-serif;
