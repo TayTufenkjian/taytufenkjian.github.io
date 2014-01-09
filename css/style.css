@@ -112,6 +112,10 @@ nav li {
 	text-transform: uppercase;
 }
 
+nav li a {
+	display: block;
+}
+
 nav a:link, a:active a:visited {
 	color: inherit;
 	text-decoration: none;
@@ -211,7 +215,7 @@ section {
 
 /* Project Gallery adapted from Chris Coyier's post: "Seamless Responsive Photo Grid" */
 #projectGallery {
-   /* altered to include gaps */   
+   /* altered to include gaps */ 
    line-height: 400%;
    -webkit-column-count: 2;
    -webkit-column-gap:   30px;
@@ -306,6 +310,7 @@ a:hover {
 	width: 80%;
 	margin: 0 auto;
 	padding: 5% 0;
+	text-align: center;
 }
 
 .projectTitle {
@@ -325,14 +330,21 @@ a:hover {
 	border-top: 20px solid #07C9F5;
 }*/
 
+.projectIntro {
+	width: 60%;
+	margin: 0 auto;
+	text-align: left;
+}
+
 .projectDescription {
 	width: 60%;
 	margin: 0 auto;
+	padding-bottom: 2%;
 }
 
-/*.caption {
+.caption {
 	font-size: 1em;
-}*/
+}
 
 .lightbox img {
 	padding: 0 1% 1% 0;
