@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -57,8 +58,29 @@ ul {
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, #pitchOutput {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
 
-/************ Footer Contact Info ************/
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.25em;
+}
+/* end General Styles */
+
+/* Footer Contact Info */
 footer {
 	text-align: center;
 	padding: 5% 0;
@@ -84,9 +106,9 @@ footer li {
 	background-size: 30px 30px;
 	opacity: 1;
 }
+/* end Footer Contact Info */
 
-
-/******************** Nav Style ********************/
+/* Nav Styles */
 nav {
 	margin: 0 auto;
 	height: 75px;
@@ -95,6 +117,7 @@ nav {
 	font-weight: 300;
 	border-bottom: solid 2px #333;
 	position: fixed;
+	z-index: 9999;
 }
 
 nav ul {
@@ -136,10 +159,10 @@ nav a:hover {
 	font-size: 2em;
 	padding: 0 2%;
 }
+/* end Nav Styles */
 
-
-/****** Main Content ********/
-
+/* Main Content */
+/* to prevent hiding under fixed nav */
 .firstContent {
 	padding-top: 100px;
 }
@@ -156,6 +179,7 @@ nav a:hover {
 	margin: 0 auto;
 }
 
+/* Background Color Styles */
 .bkgWhite {
 	background: white;
 }
@@ -193,6 +217,7 @@ section {
 	text-align: center;
 }
 
+/* Index section-specific styles */
 #hello {
 	margin: 0 auto;
 }
@@ -202,92 +227,89 @@ section {
 	width: 70%;
 }
 
-#favThings {
-	margin: 0 auto;
-	list-style: none;
-	display: block;
-	max-width: 525px;
-}
-
-#favThings li {
-	float: left;
-}
-
-/* Project Gallery adapted from Chris Coyier's post: "Seamless Responsive Photo Grid" */
-#projectGallery {
-   /* altered to include gaps */ 
-   line-height: 400%;
-   -webkit-column-count: 2;
-   -webkit-column-gap:   30px;
-   -moz-column-count:    2;
-   -moz-column-gap:      30px;
-   column-count:         2;
-   column-gap:           30px;
-}
-
+/* Project Gallery */
 #projectGallery img {
-/*   Just in case there are inline attributes - Chris Coyier's original notes*/
   max-width: 100% !important;
   height: auto !important;
 }
 
-@media (max-width: 800px) {
-  #projectGallery {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
+#projectGallery figure p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
 }
 
-#projectGallery figure {
+
+.thumb {
+	display: inline-block;
+	width: 500px;
+	height: 248px;
+}
+
+.thumbnailContainer {
+	display: inline-block;
+	margin: 20px 25px;
 	position: relative;
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 1.5em;
+	overflow: hidden;
 }
 
+.thumb figure img {
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.5s;
+}
 
-/* Caption on hover adapted from Chris Coyier's post: "A Really Nice Way To Handle Popup Information" */
-#projectGallery figcaption {
-	line-height: normal;
+.caption {
 	position: absolute;
-	right: 0; bottom: 0; left: 0;
-	background: rgba(0,0,0,0.75);
-	color: white; 
-	opacity: 0;
-  -webkit-transition: opacity 0.5s ease-out;  
-     -moz-transition: opacity 0.5s ease-out;  
-      -ms-transition: opacity 0.5s ease-out;  
-       -o-transition: opacity 0.5s ease-out;  
-          transition: opacity 0.5s ease-out;  
+	bottom: 0;
+	padding: 0 5%;
+	color: #333;
+	background-color: #F7F7F7;;
+	width: 100%;
+	opacity: 1.0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 }
 
-#projectGallery figure:hover figcaption {
+.caption h3 {
+	font-variant: small-caps;
+	text-align: center;
+	padding: 0 10px 10px;
+	border-bottom: thin solid rgba(0, 0, 0, 0.5);
+}
+
+.caption p {
 	display: block;
-	opacity: 1;
+	text-align: left;
+	padding: 8%;
+	width: 90%;
+	line-height: 150%;
 }
 
-
-h1, h2, h3, h4, h5, h6, #pitchOutput {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+.thumb:hover img  {
+  opacity: 0.5;
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
 }
 
-h1 {
-	font-size: 2.5em;
+ .thumb:hover .caption {
+  opacity: 1;
+  -webkit-transform: translateY(1%);
+  -moz-transform: translateY(1%);
+  -ms-transform: translateY(1%);
+  transform: translateY(1%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
 }
 
-h2 {
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-p {
-	font-size: 1.25em;
+figure {
+	height: 100%;
 }
 
 /****** Links and Hover ******/
@@ -340,10 +362,6 @@ a:hover {
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 2%;
-}
-
-.caption {
-	font-size: 1em;
 }
 
 .lightbox img {
