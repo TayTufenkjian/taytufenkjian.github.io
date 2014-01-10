@@ -5,16 +5,15 @@
     -webkit-box-sizing: border-box;
 }
 
-
-
 html {
 	height: 100%;
 	width: 100%;
 }
 
-body {
+p {
 	font-family: 'Crimson Text', serif;
 	font-size: 1em;
+	color: #666;
 }
 
 .wrapper {
@@ -37,6 +36,14 @@ body {
 
 .col4 {
 	width: 25%;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
 }
 
 .clearfix:after { 
@@ -78,6 +85,7 @@ h3 {
 p {
 	font-size: 1.25em;
 }
+
 /* end General Styles */
 
 /* Footer Contact Info */
@@ -91,6 +99,7 @@ footer li {
 	padding: 1% 0;
 	list-style: none;
 	font-size: 20px;
+	font-family: 'Crimson Text', serif;
 }
 
 .socialMedia img {
@@ -126,6 +135,7 @@ nav ul {
 	display: inline;
 	float: right;
 	width: 40%;
+	min-width: 300px;
 }
 
 nav li {
@@ -158,6 +168,10 @@ nav a:hover {
 	float: left;
 	font-size: 2em;
 	padding: 0 2%;
+}
+
+#homeName a:hover {
+	color: inherit;
 }
 /* end Nav Styles */
 
@@ -220,11 +234,37 @@ section {
 /* Index section-specific styles */
 #hello {
 	margin: 0 auto;
+	text-align: center;
 }
 
 #profile {
 	margin: 0 auto;
 	width: 70%;
+}
+
+.colCountWrapper {
+	-webkit-column-count: 2;
+  -webkit-column-gap:   20px;  
+  -moz-column-count:    2;
+  -moz-column-gap:      20px;
+  column-count:         2;
+  column-gap:           20px;
+}
+
+.colCountWrapper p{
+	margin-top: 0; 
+}
+
+@media (max-width: 800px) {
+  .colCountWrapper {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+#projectGallery {
+	text-align: center;
 }
 
 /* Project Gallery */
@@ -233,13 +273,7 @@ section {
   height: auto !important;
 }
 
-#projectGallery figure p {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 1em;
-}
-
-
+/* Adapted from source code on http://andrewcshield.com/ */
 .thumb {
 	display: inline-block;
 	width: 500px;
@@ -275,7 +309,6 @@ section {
 }
 
 .caption h3 {
-	font-variant: small-caps;
 	text-align: center;
 	padding: 0 10px 10px;
 	border-bottom: thin solid rgba(0, 0, 0, 0.5);
@@ -284,7 +317,7 @@ section {
 .caption p {
 	display: block;
 	text-align: left;
-	padding: 8%;
+	padding: 2% 8% 8% 8%;
 	width: 90%;
 	line-height: 150%;
 }
@@ -314,7 +347,7 @@ figure {
 
 /****** Links and Hover ******/
 a:link, a:active, a:visited {
-	color: inherit;
+	color: #000;
 	text-decoration: underline;
 }
 
