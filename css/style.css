@@ -320,6 +320,7 @@ section {
 	padding: 2% 8% 8% 8%;
 	width: 90%;
 	line-height: 150%;
+	color: #333;
 }
 
 .thumb:hover img  {
@@ -391,14 +392,28 @@ a:hover {
 	text-align: left;
 }
 
+.projectPage p {
+	color: #333;
+}
+
+.projectPage figcaption {
+	font-family: 'Crimson Text', serif;
+	font-size: 1em;
+}
+
 .projectDescription {
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 2%;
 }
 
+.lightbox {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .lightbox img {
-	padding: 0 1% 1% 0;
+	padding: 0 2% 2% 0;
 }
 
 
