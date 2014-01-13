@@ -442,7 +442,7 @@ input[type=text]:focus {
 	padding: 2% 0;
 	background: black;
 	color: white;
-	border: 1px solid #555;
+	border: none;
 	text-align: center;
 	font-size: 1.5em;
 	text-transform: uppercase;
