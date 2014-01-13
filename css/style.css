@@ -380,30 +380,6 @@ figure {
 /* end Project Sub-Pages */
 
 /*  Madlibs Project */
-:focus {
-	outline: 0;
-}
-
-#pitch, #pitchOutput {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-}
-
-#pitch {
-	margin: 0 auto;
-	width: 30%;
-	padding: 2% 0;
-	background: white;
-	border: 1px solid black;
-	text-align: center;
-	font-size: 1.5em;
-	text-transform: uppercase;
-}
-
-#pitch:hover {
-	background-color: #07C9F5;
-}
-
 form {
 	margin: 0 auto;
 }
@@ -424,6 +400,43 @@ input {
 	width: 60%;
 	padding: 1%;
 	text-align: center;
+	border: 2px solid #dadada;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	outline: none;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border: 2px solid #07C9F5;
+	-moz-box-shadow: 0 0 10px #07C9F5;
+	-webkit-box-shadow: 0 0 10px #07C9F5;
+	box-shadow: 0 0 10px #07C9F5; 
+}
+
+#pitch, #pitchOutput {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+#pitch {
+	margin: 0 auto;
+	width: 30%;
+	padding: 2% 0;
+	background: white;
+	border: 1px solid #555;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+/*	background: -webkit-linear-gradient(bottom, #07C9F5, #97E8FB);
+	background: -o-linear-gradient(top, #07C9F5, #97E8FB);
+	background: -moz-linear-gradient(top, #07C9F5, #97E8FB); 
+	background: linear-gradient(to top, #07C9F5, #97E8FB); */
+}
+
+#pitch:hover {
+	background-color: #07C9F5;
 }
 
 #pitchOutput {
