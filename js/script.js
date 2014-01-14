@@ -12,6 +12,17 @@ $(document).ready(function() {
     return false;
 	});
 
+  /* For Collapsible Nav Menu */
+  /* prepend menu icon */
+  $('#homeName').after('<div id="menu-icon">Menu</div>');
+  
+  /* toggle nav */
+  $('#menu-icon').on('click', function(){
+    $('#navSections').slideToggle();
+    $(this).toggleClass('active');
+  });
+
+
   // Nivo Lightbox for Bookalokal page under Projects
   $('div.lightbox a').nivoLightbox();
 
