@@ -241,7 +241,7 @@ footer li {
 	margin-top: 0; 
 }
 
-@media (max-width: 800px) {
+@media handheld, screen and (max-width: 800px) {
   .colCountWrapper {
   -moz-column-count:    1;
   -webkit-column-count: 1;
