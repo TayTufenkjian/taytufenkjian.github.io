@@ -241,13 +241,17 @@ footer li {
 	margin-top: 0; 
 }
 
-@media handheld, screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .colCountWrapper {
   -moz-column-count:    1;
+  -webkit-column-gap:   0px;  
   -webkit-column-count: 1;
+  -moz-column-gap:      0px;
   column-count:         1;
+  column-gap:           0px;
   }
 }
+
 /* end Hello and Profile Index Sections */
 
 /* Project Gallery */
