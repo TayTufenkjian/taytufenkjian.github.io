@@ -14,13 +14,19 @@ $(document).ready(function() {
 
   /* For Collapsible Nav Menu */
   /* prepend menu icon */
-  $('#homeName').after('<div id="menu-icon">Menu</div>');
+  $('#homeName').after('<div id="menu-icon"><img src="images/menu.png"/></div>');
   
   /* toggle nav */
-  $('#menu-icon').on('click', function(){
-    $('#navSections').slideToggle();
+   $('#menu-icon').on('click', function(){
+    $('nav ul').slideToggle();
     $(this).toggleClass('active');
-  });
+    });
+
+   $(window).resize(function() {
+    if($(window).width() > 680) 
+        $('nav ul').show();
+    else $('nav ul').hide();
+    });
 
 
   // Nivo Lightbox for Bookalokal page under Projects
