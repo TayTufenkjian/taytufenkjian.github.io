@@ -20,10 +20,6 @@ html {
 	margin: 0 auto;
 }
 
-.col3 {
-	width: 33%;
-}
-
 .right {
 	float: right;
 }
@@ -125,6 +121,7 @@ nav ul {
 }
 
 nav li {
+	width: 33%;
 	display: block;
 	float: left;
 	text-align: center;
@@ -149,9 +146,7 @@ nav a:hover {
 	text-decoration: none;
 }
 
-
-
-/* for Mobile(Small Device) Toggle Nav */
+/* hide small device menu icon by default */
 #menu-icon {
 	display: none;
 	margin-top: 5px;
@@ -160,45 +155,45 @@ nav a:hover {
 	margin-left: auto;
 }
 
-@media screen and (max-width: 680px) {
+/* for Small Device Toggle Nav */
+@media only screen and (max-width: 680px) {	
 	#menu-icon {
-		color: #000;
-		width: 42px;
-		height: 30px;
-		padding: 5px;
-		cursor: pointer;
-		float: right;
-		display: block;
+			color: #000;
+			width: 42px;
+			height: 30px;
+			padding: 5px;
+			cursor: pointer;
+			float: right;
+			display: block;
+		}
+
+	nav ul {
+			clear: both;
+			display: none;
+			width: 100%;
+			z-index: 99999;
+			margin: 0;
+			background: black;
+			border-top: none;
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
 	}
 
-nav ul {
-		clear: both;
-		display: none;
-		width: 100%;
-		z-index: 99999;
-		margin: 0;
-		background: black;
-		border-top: none;
-		border-left: 2px solid black;
-		border-bottom: 2px solid black;
-		border-right: 2px solid black;
+	nav li {
+			margin: 0;
+			text-align: center;
+		}
+
+	nav li a:link, nav li a:visited  {
+			color: white;
+		}
+
+	#homeName {
+		margin-left: 5%
+	} 
+
 }
-
-nav li {
-		margin: 0;
-		text-align: center;
-	}
-
-nav li a:link, nav li a:visited  {
-		color: white;
-	}
-
-#homeName {
-	margin-left: 5%
-} 
-
-}
-
 /* end Nav Styles */
 
 /* Footer */
@@ -309,7 +304,7 @@ footer li {
 /* Project Gallery */
 /* Adapted from source code on http://andrewcshield.com/ */
 #projectGallery {
-	text-align: center;
+	text-align: left;
 }
 
 #projectGallery img {

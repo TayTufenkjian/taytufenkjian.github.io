@@ -20,12 +20,15 @@ $(document).ready(function() {
    $('#menu-icon').on('click', function(){
     $('nav ul').slideToggle();
     $(this).toggleClass('active');
-    });
+   });
 
    $(window).resize(function() {
     if($(window).width() > 680) 
         $('nav ul').show();
     else $('nav ul').hide();
+         $('nav li').on('click', function () {
+            $('nav ul').hide();
+         });
     });
 
 
