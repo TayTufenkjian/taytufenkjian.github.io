@@ -100,22 +100,22 @@ a:hover {
 
 /* Nav Styles */
 nav {
-	width: 100%;
-	margin: 0;
-	position: fixed;
-	z-index: 9999;
-	height: 75px;
-	line-height: 75px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	border-bottom: solid 2px #333;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 9999;
+  height: 75px;
+  line-height: 75px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border-bottom: solid 2px #333;
+  width: 100%;
 }
 
 #homeName {
-	display: inline-block; 
-	float: left;
-	padding: 0 2%;
-	font-size: 2em;
+  display: inline-block; 
+  float: left;
+  padding: 0 2%;
+  font-size: 2em;
 }
 
 #homeName a:hover {
@@ -123,12 +123,12 @@ nav {
 }
 
 nav ul {
-	margin: 0 auto;
-	float: right;
-	width: 40%;
-	min-width: 300px;
-	list-style: none;
-	display: inline;
+  margin: 0 auto;
+  float: right;
+  width: 40%;
+  min-width: 300px;
+  list-style: none;	
+  display: inline-block;
 }
 
 nav li {
@@ -243,13 +243,8 @@ footer li {
 }
 
 #hello h1 {
-	font-size: 5em;
+	font-size: 4em;
 	margin: 2% auto;
-}
-
-#hello h2 {
-	font-size: 3em;
-	margin: 0 auto;
 }
 
 #profilePic {
