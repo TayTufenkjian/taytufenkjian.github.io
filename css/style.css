@@ -11,21 +11,28 @@ html {
 }
 
 .wrapper {
-	width: 100%;
-	margin: 0;
-}
-
-.colCenter {
 	width: 90%;
 	margin: 0 auto;
 }
 
-.right {
+.col2_left {
+	margin: 0 1% 0 0;
+	float: left;
+	width: 49%;
+}
+
+.col2_right {
+	width: 49%;
+	margin: 0 0 0 1%;
 	float: right;
 }
 
-.left {
-	float: left;
+@media only screen and (max-width: 1120px) {
+	.col2_left, .col2_right {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
 }
 
 .clearfix:after { 
@@ -43,6 +50,10 @@ section {
 
 ul {
 	padding: 0;
+}
+
+img {
+	max-width: 100%;
 }
 /* end Layout Styles */
 
@@ -65,7 +76,7 @@ h3 {
 }
 
 p {
-	font-size: 1.25em;
+	font-size: 1.50em;
 	font-family: 'Crimson Text', serif;
 	color: #444;
 }
@@ -89,20 +100,20 @@ a:hover {
 
 /* Nav Styles */
 nav {
-	margin: 0 auto;
+	width: 100%;
+	margin: 0;
 	position: fixed;
 	z-index: 9999;
 	height: 75px;
 	line-height: 75px;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	border-bottom: solid 2px #333;
 }
 
 #homeName {
 	display: inline-block; 
 	float: left;
-	margin-left: 10%;
 	padding: 0 2%;
 	font-size: 2em;
 }
@@ -112,7 +123,7 @@ nav {
 }
 
 nav ul {
-	margin: 0 10% auto 0;
+	margin: 0 auto;
 	float: right;
 	width: 40%;
 	min-width: 300px;
@@ -231,6 +242,16 @@ footer li {
 	padding-top: 100px;
 }
 
+#hello h1 {
+	font-size: 5em;
+	margin: 2% auto;
+}
+
+#hello h2 {
+	font-size: 3em;
+	margin: 0 auto;
+}
+
 #profilePic {
 	margin: 0 auto;
 	display: block;
@@ -275,50 +296,26 @@ footer li {
 	width: 70%;
 }
 
-.colCountWrapper {
-	-webkit-column-count: 2;
-  -webkit-column-gap:   20px;  
-  -moz-column-count:    2;
-  -moz-column-gap:      20px;
-  column-count:         2;
-  column-gap:           20px;
-}
-
-.colCountWrapper p{
-	margin-top: 0; 
-}
-
-@media only screen and (max-width: 850px) {
-  .colCountWrapper {
-  -moz-column-count:    1;
-  -webkit-column-gap:   0px;  
-  -webkit-column-count: 1;
-  -moz-column-gap:      0px;
-  column-count:         1;
-  column-gap:           0px;
-  }
-}
-
 /* end Hello and Profile Index Sections */
 
 /* Project Gallery */
 /* Adapted from source code on http://andrewcshield.com/ */
 #projectGallery {
-	text-align: left;
+	margin: 0 auto;
 }
 
 #projectGallery img {
 		width: 100%;
+		max-width: 670px;
 }
 
 .thumbnailContainer {
-	margin: 1.5%;
+	margin: 5% 2%;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	max-width: 100%;
+	max-width: 670px;
 }
-
 
 .thumb figure img {
 	-webkit-transform: translate3d(0, 0, 0);
@@ -327,7 +324,6 @@ footer li {
 }
 
 .thumb {
-	display: inline-block;
 	width: 500px;
 	height: 248px;
 	max-width: 100%;
@@ -341,6 +337,7 @@ figure {
 .caption {
 	position: absolute;
 	width: 100%;
+	max-width: 670px;
 	max-height: 100%;
 	bottom: 0;
 	padding: 0 5%;
@@ -350,6 +347,8 @@ figure {
 	-webkit-transform: translateY(100%);
 	-moz-transform: translateY(100%);
 	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 }
@@ -387,9 +386,10 @@ figure {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1120px) {
 	.thumbnailContainer {
-	margin: 1.5% auto;
+	margin: 3% auto;
+	display: block;
 	}
 }
 
@@ -401,9 +401,7 @@ figure {
 /* end Project Gallery */
 
 /* Project Sub-Pages */
-.projectPage {
-	margin: 0 auto;
-	width: 80%;
+.projectContent {
 	padding: 5% 0;
 	text-align: center;
 }
