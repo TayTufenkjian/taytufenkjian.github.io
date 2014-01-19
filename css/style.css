@@ -76,7 +76,7 @@ h3 {
 }
 
 p {
-	font-size: 1.50em;
+	font-size: 1.4em;
 	font-family: 'Crimson Text', serif;
 	color: #444;
 }
@@ -114,7 +114,7 @@ nav {
 #homeName {
   display: inline-block; 
   float: left;
-  padding: 0 2%;
+  padding: 0 1%;
   font-size: 2em;
 }
 
@@ -149,7 +149,7 @@ nav a:link, a:active a:visited {
 }
 
 nav li:hover {
-	background: #333;
+	background: black;
 	color: #07C9F5;
 }
 
@@ -161,7 +161,6 @@ nav a:hover {
 #menu-icon {
 	display: none;
 	margin-top: 5px;
-	margin-right: 5%;
 	margin-bottom: 0;
 	margin-left: auto;
 }
@@ -184,7 +183,7 @@ nav a:hover {
 			width: 100%;
 			z-index: 99999;
 			margin: 0;
-			background: black;
+			background: rgba(0,0,0,0.8);
 			border-top: none;
 			border-left: 2px solid black;
 			border-bottom: 2px solid black;
@@ -195,6 +194,11 @@ nav a:hover {
 			margin: 0;
 			text-align: center;
 		}
+
+	nav li a:active {
+		background: black;
+		color: #07C9F5;
+	}
 
 	nav li a:link, nav li a:visited  {
 			color: white;
@@ -217,7 +221,7 @@ footer li {
 	margin: 0 auto;
 	padding: 1% 0;
 	list-style: none;
-	font-size: 20px;
+	font-size: 1.3em;
 	font-family: 'Crimson Text', serif;
 }
 
@@ -288,9 +292,14 @@ footer li {
 
 #profile {
 	margin: 0 auto;
-	width: 70%;
+	width: 50%;
 }
 
+@media only screen and (max-width: 700) {
+	#profile {
+		width: 100%;
+	}
+}
 /* end Hello and Profile Index Sections */
 
 /* Project Gallery */
@@ -356,6 +365,7 @@ figure {
 
 .caption p {
 	display: block;
+	font-size: 1.2em;
 	padding: 2% 8% 8% 8%;
 	line-height: 150%;
 	text-align: left;
@@ -397,7 +407,7 @@ figure {
 
 /* Project Sub-Pages */
 .projectContent {
-	padding: 5% 0;
+	padding: 3% 0;
 	text-align: center;
 }
 
@@ -407,25 +417,16 @@ figure {
 	color: white;
 }
 
-.projectIntro {
-	margin: 0 auto;
-	width: 60%;
-	text-align: left;
-}
-
-.projectPage p {
-	color: #333;
-}
-
-.projectPage figcaption {
-	font-family: 'Crimson Text', serif;
-	font-size: 1em;
+.projectContent img {
+	max-width: 100%;
+	padding-bottom: 1%;
 }
 
 .projectDescription {
 	margin: 0 auto;
-	width: 60%;
-	padding-bottom: 2%;
+	width: 50%;
+	padding-bottom: 1%;
+	text-align: left;
 }
 
 .lightbox {
@@ -441,8 +442,10 @@ figure {
 /*  Madlibs Project */
 form {
 	margin: 0 auto;
+	width: 80%;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	font-size: 1.2em;
 }
 
 form ul {
@@ -472,7 +475,6 @@ input {
 	display: inline-block;
 	width: 100%;
 	padding: 1%;
-	text-align: center;
 	font-weight: 300;
 	font-size: 0.75em;
 	border: 2px solid #dadada;
@@ -505,10 +507,6 @@ input[type=text]:focus {
 	text-align: center;
 	font-size: 1.5em;
 	text-transform: uppercase;
-/*	background: -webkit-linear-gradient(bottom, #07C9F5, #97E8FB);
-	background: -o-linear-gradient(top, #07C9F5, #97E8FB);
-	background: -moz-linear-gradient(top, #07C9F5, #97E8FB); 
-	background: linear-gradient(to top, #07C9F5, #97E8FB); */
 }
 
 #pitch:hover {
