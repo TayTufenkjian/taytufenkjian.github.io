@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   /* For Collapsible Nav Menu */
   /* prepend menu icon */
-  $('#homeName').after('<div id="menu-icon"><img src="images/menu.png"/></div>');
+  $('#homeName').after('<div id="menu-icon"><img src="images/menu.gif"/></div>');
   
   /* toggle nav */
    $('#menu-icon').on('click', function(){
