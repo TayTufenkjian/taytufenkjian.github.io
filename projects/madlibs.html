@@ -35,7 +35,7 @@
 	<script type="text/javascript">
 	function resetForm($form) {
     $form.find('input:text, input:password, input:file, select, textarea').val('');
-}
+	}
 
 	function processPitch(form) {  
     var firstNoun = form.firstNoun.value;
@@ -46,6 +46,8 @@
     $('#pitchOutput').css('background', '#07C9F5');
     $('#pitchOutput').html("I&rsquo;m a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
     resetForm($(form));
+
+    $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
 	}
 	</script>
 </head>
