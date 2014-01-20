@@ -1,0 +1,136 @@
+/* scale all images and media */
+img, video, audio, iframe, form, table {
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+	/* Collapse columns */
+	.col2_left, .col2_right {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+	/* adjust margins for Project Gallery thumbnails */
+	.thumbnailContainer {
+	margin: 3% auto;
+	display: block;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#profile {
+		width: 90%;
+	}
+	.projectDescription {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 680px) {	
+	/* Toggle nav with menu icon */
+	#menu-icon {
+			color: #000;
+			cursor: pointer;
+			display: block;
+			float: right;
+			height: 30px;
+			padding: 5px;
+			width: 42px;
+		}
+
+	nav ul {
+			clear: both;
+			background: rgba(0,0,0,0.8);
+			border-top: none;
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+			border-right: 2px solid black;
+			display: none;
+			margin: 0;
+			width: 100%;
+			z-index: 99999;
+	}
+
+	nav li {
+			margin: 0;
+			text-align: center;
+		}
+
+	nav li a:active {
+		background: black;
+		color: #07C9F5;
+	}
+
+	nav li a:link, nav li a:visited {
+		color: white;
+	}
+
+	#homeName {
+		margin-left: 5%
+	} 
+
+	/* resize Madlibs form */
+	form, #pitchOutput {
+		width: 100%;
+	}
+
+	label, #pitch, #pitchOutput {
+		font-size: 1.125em;
+	}
+
+	input[type="text"] {
+		font-size: 0.9em;
+	}	
+}
+
+@media only screen and (max-width: 480px) {
+		/* remove fixed nav */
+	nav {
+		position: static;
+	}
+
+	.firstContent {
+	padding-top: 10px;
+	}
+
+	/* adjust font sizes */
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.125em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	footer li {
+		font-size: 1em;
+		padding: 10px 0;
+	}
+
+	#homeName {
+		font-size: 1.5em;
+	}
+
+	#hello h1 {
+		font-size: 2em;
+	}
+
+	/* hide Project Gallery captions that require hover */
+	.caption {
+		display: none;
+	}
+
+}
+
+
+
+
+
