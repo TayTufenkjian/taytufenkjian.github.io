@@ -84,6 +84,7 @@ img, video, audio, iframe, form, table {
 }
 
 @media only screen and (max-width: 480px) {
+
 	/* remove fixed nav */
 	nav {
 		position: static;
@@ -91,36 +92,6 @@ img, video, audio, iframe, form, table {
 
 	.firstContent {
 	padding-top: 10px;
-	}
-
-	/* adjust font sizes */
-	h1 {
-		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.25em;
-	}
-
-	p {
-		font-size: 1.125em;
-	}
-
-	footer li {
-		font-size: 1.125em;
-		padding: 10px 0;
-	}
-
-	#homeName {
-		font-size: 1.5em;
-	}
-
-	#hello h1 {
-		font-size: 2em;
 	}
 
 	/* hide Project Gallery captions that require hover */
