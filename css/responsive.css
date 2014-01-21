@@ -95,7 +95,7 @@ img, video, audio, iframe, form, table {
 	}
 
 	/* tighten footer spacing */
-	footer {
+	footer li {
 		padding: 10px;
 	}
 
