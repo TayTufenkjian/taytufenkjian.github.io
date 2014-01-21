@@ -71,7 +71,7 @@ img, video, audio, iframe, form, table {
 
 	/* resize Madlibs form */
 	form, #pitchOutput {
-		width: 100%;
+		width: 90%;
 	}
 
 	label, #pitch, #pitchOutput {
@@ -84,7 +84,7 @@ img, video, audio, iframe, form, table {
 }
 
 @media only screen and (max-width: 480px) {
-		/* remove fixed nav */
+	/* remove fixed nav */
 	nav {
 		position: static;
 	}
@@ -103,15 +103,15 @@ img, video, audio, iframe, form, table {
 	}
 
 	h3 {
-		font-size: 1.125em;
+		font-size: 1.25em;
 	}
 
 	p {
-		font-size: 1em;
+		font-size: 1.125em;
 	}
 
 	footer li {
-		font-size: 1em;
+		font-size: 1.125em;
 		padding: 10px 0;
 	}
 
