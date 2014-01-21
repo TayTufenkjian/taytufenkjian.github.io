@@ -96,7 +96,7 @@ img, video, audio, iframe, form, table {
 
 	/* tighten footer spacing */
 	footer li {
-		padding: 10px;
+		padding: 10px 0;
 	}
 
 	/* hide Project Gallery captions that require hover */
