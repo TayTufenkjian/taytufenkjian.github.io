@@ -25,9 +25,10 @@ $(document).ready(function() {
 
    /* make sure nav appears and hides when resized on desktop*/
    $(window).resize(function() {
-    if($(window).width() > 680) 
+    if($(window).width() > 680) {
         $('nav ul').show();
-    else $('nav ul').hide();
+      }
+    else {$('nav ul').hide();}
     });
 
 
