@@ -14,10 +14,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600' rel='stylesheet' type='text/css'/>
 	<link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-	<!--General scripts -->
+	<!--JS libraries-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script type='text/javascript' src='../js/script.js'></script>
 	<!-- HTML5 Shiv -->
 		<!--[if lt IE 9]>
 		    <script src="js/html5-shiv-dist/html5shiv-printshiv.js"></script>
@@ -32,24 +31,7 @@
 	  ga('create', 'UA-46394305-1', 'taytufenkjian.com');
 	  ga('send', 'pageview');
 	</script>
-	<script type="text/javascript">
-	function resetForm($form) {
-    $form.find('input:text, input:password, input:file, select, textarea').val('');
-	}
 
-	function processPitch(form) {  
-    var firstNoun = form.firstNoun.value;
-    var secondNoun = form.secondNoun.value;
-    var adjective = form.adjective.value;
-    var thirdNoun = form.thirdNoun.value;
-    var verb = form.verb.value;
-    $('#pitchOutput').css('background', '#07C9F5');
-    $('#pitchOutput').html("I&rsquo;m a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
-    resetForm($(form));
-
-    $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
-	}
-	</script>
 </head>
 <body>
 	<header>
@@ -115,6 +97,26 @@
 			</ul>
 		</div>
 	</footer>
+	<script type='text/javascript' src='../js/script.js'></script>
+	<script type='text/javascript' src='../js/css3-mediaqueries.js'></script>
+	<script type="text/javascript">
+	function resetForm($form) {
+    $form.find('input:text, input:password, input:file, select, textarea').val('');
+	}
+
+	function processPitch(form) {  
+    var firstNoun = form.firstNoun.value;
+    var secondNoun = form.secondNoun.value;
+    var adjective = form.adjective.value;
+    var thirdNoun = form.thirdNoun.value;
+    var verb = form.verb.value;
+    $('#pitchOutput').css('background', '#07C9F5');
+    $('#pitchOutput').html("I&rsquo;m a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+    resetForm($(form));
+
+    $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
+	}
+	</script>	
 </body>
 
 </html>
