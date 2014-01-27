@@ -105,15 +105,10 @@
 	}
 
 	function processPitch(form) {  
-    var firstNoun = form.firstNoun.value;
-    var secondNoun = form.secondNoun.value;
-    var adjective = form.adjective.value;
-    var thirdNoun = form.thirdNoun.value;
-    var verb = form.verb.value;
     $('#pitchOutput').css('background', '#07C9F5');
-    $('#pitchOutput').html("I&rsquo;m a " + firstNoun + " looking for " + secondNoun + " at a " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+    $('#pitchOutput').html("I&rsquo;m a " + form.firstNoun.value + " looking for " + form.secondNoun.value + " at a " + form.adjective.value + " company where I can use my skills in " + form.thirdNoun.value + " to " + form.verb.value + "!");
     resetForm($(form));
-
+    
     $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
 	}
 	</script>	
