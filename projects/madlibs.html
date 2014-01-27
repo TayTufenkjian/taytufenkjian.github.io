@@ -100,17 +100,36 @@
 	<script type='text/javascript' src='../js/script.js'></script>
 	<script type='text/javascript' src='../js/css3-mediaqueries.js'></script>
 	<script type="text/javascript">
-	function resetForm($form) {
-    $form.find('input:text, input:password, input:file, select, textarea').val('');
-	}
+		function resetForm($form) {
+	    $form.find('input:text, input:password, input:file, select, textarea').val('');
+		}
 
-	function processPitch(form) {  
-    $('#pitchOutput').css('background', '#07C9F5');
-    $('#pitchOutput').html("I&rsquo;m a " + form.firstNoun.value + " looking for " + form.secondNoun.value + " at a " + form.adjective.value + " company where I can use my skills in " + form.thirdNoun.value + " to " + form.verb.value + "!");
-    resetForm($(form));
-    
-    $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
-	}
+		function startingVowel(word) {
+		    var vowels = ["a", "e", "i", "o", "u"];
+		    var numberVowels = vowels.length;
+		    var startingLetter = word[0].toLowerCase();
+		    for(var i = 0; i < numberVowels; i++) {
+		        if(startingLetter === vowels[i]) {
+		            return "an";
+		        }
+		    }
+		    return "a";
+		}
+
+		function processPitch(form) {  
+	    $('#pitchOutput').css('background', '#07C9F5');
+
+	    var firstNoun = form.firstNoun.value;
+	    var secondNoun = form.secondNoun.value;
+	    var adjective = form.adjective.value;
+	    var thirdNoun = form.thirdNoun.value;
+	    var verb = form.verb.value;
+
+	    $('#pitchOutput').html("I&rsquo;m " + startingVowel(firstNoun) + " " + firstNoun + " looking for " + secondNoun + " at " + startingVowel(adjective) + " " + adjective + " company where I can use my skills in " + thirdNoun + " to " + verb + "!");
+	    resetForm($(form));
+
+	    $('html,body').animate({scrollTop: $('#pitchOutput').offset().top}, 'slow');
+		}
 	</script>	
 </body>
 
