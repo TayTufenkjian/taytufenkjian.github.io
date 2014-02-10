@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+}
+
+@mixin column {
+	margin: 0 1% 0 0;
+	width: 49%;
+}
+
+.col2_left {
+	@include column;
+	float: left;
+}
+
+.col2_right {
+	@include column;
+	float: right;
+}
+
+.clearfix:after { 
+   clear: both;
+   content: "."; 
+   display: block; 
+   height: 0; 
+   visibility: hidden; 
+}
+
+section {
+	padding: 5% 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
