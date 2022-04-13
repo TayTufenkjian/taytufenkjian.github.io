@@ -81,7 +81,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-	color: #07C9F5;
+	color: #07dda4;
 	text-decoration: underline;
 }
 /* end Links */
@@ -137,7 +137,7 @@ nav a:link, a:active a:visited {
 
 nav li:hover, nav li a:active {
 	background: black;
-	color: #07C9F5;
+	color: #07dda4;
 }
 
 /* hide menu icon for toggle nav by default */
@@ -174,7 +174,7 @@ footer li {
 }
 
 .socialMedia img:hover, .socialMedia a:active img {
-	background-color:  #07C9F5;
+	background-color:  #07dda4;
 	background-size: 30px 30px;
 	opacity: 1;
 }
@@ -186,7 +186,7 @@ footer li {
 }
 
 .bkgBlue {
-	background: #07C9F5;
+	background: #07dda4;
 	color: white;
 }
 
@@ -389,10 +389,10 @@ input[type="text"] {
 
 input[type=text]:focus {
 	outline: none;
-	border: 2px solid #07C9F5;
-	-moz-box-shadow: 0 0 10px #07C9F5;
-	-webkit-box-shadow: 0 0 10px #07C9F5;
-	box-shadow: 0 0 10px #07C9F5; 
+	border: 2px solid #07dda4;
+	-moz-box-shadow: 0 0 10px #07dda4;
+	-webkit-box-shadow: 0 0 10px #07dda4;
+	box-shadow: 0 0 10px #07dda4; 
 }
 
 #pitch, #pitchOutput {
@@ -417,7 +417,7 @@ input[type=text]:focus {
 }
 
 #pitch:hover, #pitch:active {
-	background-color: #07C9F5;
+	background-color: #07dda4;
 }
 
 #pitchOutput {
