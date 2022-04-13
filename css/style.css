@@ -208,18 +208,6 @@ footer li {
 	margin: 1% auto;
 }
 
-#profilePic {
-	display: block;
-	margin: 2% auto;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%; 
-	border-radius: 50%;
-	border: 2px solid white;
-	-moz-box-shadow: 0 0 10px #777;
-	-webkit-box-shadow: 0 0 10px #777;
-	box-shadow: 0 0 10px #777; 
-}
-
 #hello {
 	margin: 0 auto;
 	text-align: center;
