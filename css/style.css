@@ -12,6 +12,7 @@ html {
 
 .wrapper {
 	margin: 0 auto;
+	max-width: 1080px;
 	width: 90%;
 }
 
@@ -216,7 +217,7 @@ footer li {
 /* Profile Index Section */
 #profile {
 	margin: 0 auto;
-	width: 50%;
+	width: 75%;
 }
 /* end Profile Index Section */
 /* Project Gallery Index Section */
