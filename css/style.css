@@ -99,10 +99,8 @@ nav {
 }
 
 #homeName {
-  display: inline-block; 
   float: left;
-  font-size: 2em;
-  padding: 0 1%;
+  font-size: 3em;
 }
 
 #homeName a:hover {
