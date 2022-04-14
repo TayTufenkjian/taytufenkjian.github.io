@@ -108,12 +108,11 @@ nav {
 }
 
 nav ul {
-	display: inline-block;
 	float: right;
 	list-style: none;	
-  margin: 0 auto;
-  min-width: 300px;
-  width: 40%;
+  	margin: 0 auto;
+ 	 min-width: 300px;
+  	width: 40%;
 }
 
 nav li {
@@ -238,7 +237,9 @@ footer li {
 }
 
 .thumb figure img {
+	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
+	transition: -webkit-transform 0.4s, opacity 0.5s;
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.5s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.5s;
 }
@@ -269,6 +270,7 @@ figure {
 	-ms-transform: translateY(100%);
 	-o-transform: translateY(100%);
 	transform: translateY(100%);
+	transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
 }
