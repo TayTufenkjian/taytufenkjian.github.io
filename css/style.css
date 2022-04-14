@@ -38,7 +38,7 @@ html {
 }
 
 section {
-	padding: 5% 0;
+	padding: 2% 0;
 
 }
 
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	color: #444;
+	color: #111;
 	font-family: 'Alegreya', serif;
 }
 
@@ -64,7 +64,7 @@ p {
 /* end Text*/
 /* Links */
 a:link, a:visited {
-	color: black;
+	color: #111;
 	text-decoration: underline;
 }
 
@@ -78,8 +78,8 @@ nav {
   border-bottom: solid 2px #333;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  height: 75px;
-  line-height: 75px;
+  height: 80px;
+  line-height: 80px;
   margin: 0 auto;
   position: fixed;
   width: 100%;
@@ -121,7 +121,7 @@ nav a:link, a:active a:visited {
 }
 
 nav li:hover, nav li a:active {
-	background: black;
+	background: #111;
 	color: #07dda4;
 }
 
@@ -169,12 +169,7 @@ footer li {
 }
 
 .bkgDark {
-	background: black;
-	color: white;
-}
-
-.bkgDarkTexture {
-	background-image: url("../images/debut_dark.png");
+	background: #111;
 	color: white;
 }
 
@@ -183,6 +178,14 @@ footer li {
 }
 /* end Background Colors*/
 /* Hello Index Section */
+#hello {
+	margin: 0 auto;
+}
+
+#hello div {
+	padding: 2% 0;
+}
+
 #hello h1 {
 	margin: 2% auto;
 }
@@ -190,10 +193,6 @@ footer li {
 #hello h2 {
 	color: #07dda4;
 	margin: 1% auto;
-}
-
-#hello {
-	margin: 0 auto;
 }
 /* end Hello Index Section */
 /* Profile Index Section */
@@ -247,7 +246,7 @@ figure {
 	max-height: 100%;
 	bottom: 0;
 	padding: 0 5%;
-	color: #333;
+	color: #111;
 	background-color: #F7F7F7;
 	opacity: 1.0;
 	-webkit-transform: translateY(100%);
@@ -271,7 +270,7 @@ figure {
 	padding: 2% 8% 8% 8%;
 	line-height: 150%;
 	text-align: left;
-	color: #333;
+	color: #111;
 }
 
 .thumb:hover img  {
