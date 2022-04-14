@@ -66,7 +66,7 @@ h3 {
 
 p {
 	color: #444;
-	font-family: 'Crimson Text', serif;
+	font-family: 'Alegreya', serif;
 	font-size: 1.5em;
 }
 
@@ -157,7 +157,7 @@ footer {
 }
 
 footer li {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Alegreya', serif;
 	font-size: 1.4em;
 	list-style: none;
 	margin: 0 auto;
@@ -366,7 +366,7 @@ form ul li {
 label {
 	color: #444;
 	display: block;
-	font-family: 'Crimson Text', serif;
+	font-family: 'Alegreya', serif;
 	font-size: 1.5em;
 	margin-bottom: 2%;
 	text-align: left;
