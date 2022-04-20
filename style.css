@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abel', 'Helvetica', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1.5em 0;
+    width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Architects Daughter', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #07dda4;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav .wrapper {
+    align-items: center;
+    display: flex;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+#name {
+    font-size: 2.5em;
+}
+
+.bkgLight { 
+    background-color: #eee;
+    color: #222;
+}
+
+.bkgDark {
+    background-color: #222;
+    color: #eee;
+}
+
+.project {
+    align-items: center;
+    display: flex;
+    gap: 2%;
+    padding: 5% 0;
+}
+
+.project .description, .project img {
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+#hello h1, .project h2 {
+    color: #07dda4;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
