@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Abel', 'Helvetica', sans-serif;
-    font-size: 20px;
     margin: 0;
 }
 
@@ -23,8 +22,8 @@ h1 {
     font-size: 2em;
 }
 
-p {
-    margin: 0.5rem 0;
+#profile p {
+    margin: 1em 0 1.5em 0;
 }
 
 ul {
@@ -94,5 +93,12 @@ nav ul li {
 footer ul {
     display: flex;
     gap: 1rem;
+}
+
+/* Increase font size on larger screens */
+@media screen and (min-width: 780px) {
+    body {
+        font-size: 24px;
+    }
 }
 
