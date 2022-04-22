@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Abel', 'Helvetica', sans-serif;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -58,6 +59,10 @@ nav ul li {
 nav ul li:hover {
     color: #07dda4;
     cursor: pointer;
+}
+
+#menu-icon {
+    display: none;
 }
 
 #name {
@@ -119,15 +124,13 @@ footer img:hover {
 }
 
 
-/* Increase font size on larger screens */
-@media screen and (min-width: 780px) {
-    body {
-        font-size: 24px;
-    }
-}
+/* Media queries for smaller screen styles */
 
-/* Stack project text and images in one column on small screens */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+
     .project {
         flex-direction: column;
         margin-bottom: 5%;
@@ -139,5 +142,16 @@ footer img:hover {
 
     .project .description p {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: none;
     }
 }
