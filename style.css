@@ -77,7 +77,7 @@ nav ul li:hover {
 .project {
     align-items: center;
     display: flex;
-    gap: 2%;
+    gap: 3%;
     padding: 5% 0;
 }
 
