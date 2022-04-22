@@ -94,17 +94,23 @@ nav ul li:hover {
     color: #07dda4;
 }
 
-.circle {
-    border-radius: 50%;
-}
-
-.square {
-    border-radius: 25%;
+footer .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 footer ul {
     display: flex;
     gap: 1rem;
+}
+
+footer .circle {
+    border-radius: 50%;
+}
+
+footer .square {
+    border-radius: 25%;
 }
 
 footer img:hover {
