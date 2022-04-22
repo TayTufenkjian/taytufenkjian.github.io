@@ -22,7 +22,7 @@ h1 {
     font-size: 2em;
 }
 
-#profile p {
+p {
     margin: 1em 0 1.5em 0;
 }
 
@@ -74,6 +74,10 @@ nav ul li:hover {
     color: #eee;
 }
 
+#hello p {
+    margin-top: 0;
+}
+
 .project {
     align-items: center;
     display: flex;
@@ -103,7 +107,7 @@ footer ul {
 }
 
 /* Stack project text and images in one column on small screens */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 780px) {
     .project {
         flex-direction: column;
         margin-bottom: 5%;
