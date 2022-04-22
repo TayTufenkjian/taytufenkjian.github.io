@@ -94,10 +94,20 @@ nav ul li:hover {
     color: #07dda4;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
 footer ul {
     display: flex;
     gap: 1rem;
 }
+
+footer img:hover {
+    background-clip: content-box;
+    background-color: #07dda4;
+}
+
 
 /* Increase font size on larger screens */
 @media screen and (min-width: 780px) {

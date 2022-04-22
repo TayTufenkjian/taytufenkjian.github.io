@@ -1,89 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="keywords" content="tay tufenkjian, tay, tufenkjian, web developer, web, developer, front-end, front end, frontend, fullstack, full-stack, full, stack, back-end, back end, backend, product designer, product, design, technology, learn, code, development">
-	<meta name="description" content="Full-stack developer">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Tay Tufenkjian</title>
-	<!--- Stylesheet and JS -->
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script src="script.js"></script>
-	<!-- Fonts and favicon -->	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&display=swap" rel="stylesheet">
-	<link href="images/favicon.png" rel="icon" type="image/x-icon"/>
-</head>
-<body>
-	<header>
-		<nav class="bkgLight">		
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="tay tufenkjian, tay, tufenkjian, web developer, web, developer, front-end, front end, frontend, fullstack, full-stack, full, stack, back-end, back end, backend, product designer, product, design, technology, learn, code, development">
+		<meta name="description" content="Full-stack developer">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title>Tay Tufenkjian</title>
+		<!--- Stylesheet and JS -->
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="script.js"></script>
+		<!-- Fonts and favicon -->	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&display=swap" rel="stylesheet">
+		<link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+	</head>
+	<body>
+		<header>
+			<nav class="bkgLight">		
+				<div class="wrapper">
+					<div id="name">Tay Tufenkjian</div>
+					<ul>
+						<li class="profile">About</li>	
+						<li class="projects">Projects</li>
+						<li class="contact">Contact</li>
+					</ul>
+				</div>
+			</nav>	
+		</header>
+		<div class="bkgDark">
 			<div class="wrapper">
-				<div id="name">Tay Tufenkjian</div>
-				<ul>
-					<li class="profile">About</li>	
-					<li class="projects">Projects</li>
-					<li class="contact">Contact</li>
-				</ul>
+				<section id="hello">
+					<h1>Hi, I&rsquo;m Tay.</h1>	
+					<p>I'm the developer your support reps wish you had.</p>
+				</section>		
 			</div>
-		</nav>	
-	</header>
-	<div class="bkgDark">
-		<div class="wrapper">
-			<section id="hello">
-				<h1>Hi, I&rsquo;m Tay.</h1>	
-				<p>I'm the developer your support reps wish you had.</p>
-			</section>		
 		</div>
-	</div>
-	<div class="bkgLight">
-		<div class="wrapper">
-			<section id="profile">
-				<h1>About Me</h1>
-				<p>While I may be at the beginning of my web development journey, I&rsquo;m not at the beginning of my software career.</p>
-				<p>My experience includes learning HR systems, implementing ticketing software for a community theatre, and quality assurance testing for a SaaS association management system.</p>
-				<p>Through it all, rapidly learning new software has been my edge. I&rsquo;ve levelled up to include the languages and tools required to build it.</p>	
-				<p>If you&rsquo;re looking for a developer who understands how an actionable error message can save the support team from a barrage of phone calls, <a href="mailto:taytuf@gmail.com">let&rsquo;s talk.</a></p>	
+		<div class="bkgLight">
+			<div class="wrapper">
+				<section id="profile">
+					<h1>About Me</h1>
+					<p>While I may be at the beginning of my web development journey, I&rsquo;m not at the beginning of my software career.</p>
+					<p>My experience includes learning HR systems, implementing ticketing software for a community theatre, and quality assurance testing for a SaaS association management system.</p>
+					<p>Through it all, rapidly learning new software has been my edge. I&rsquo;ve levelled up to include the languages and tools required to build it.</p>	
+					<p>If you&rsquo;re looking for a developer who understands how an actionable error message can save the support team from a barrage of phone calls, <a href="mailto:taytuf@gmail.com">let&rsquo;s talk.</a></p>	
+				</section>
+			</div>
+		</div>
+		<div class="bkgDark">
+			<section class="wrapper" id="projects">
+				<h1>Projects</h1>
+					<div>
+						<div class="project">
+							<div class="description">
+								<h2>Drunk on Carbon</h2>
+								<p>Visualizing carbon dioxide equivalents as bottles of wine using Python, Django, JavaScript, Bootstrap, and three third-party APIs.</p>
+								<p><a href="https://drunk-on-carbon.herokuapp.com/" target="blank">Go there.</a></p>
+							</div>
+							<img src="images/screenshot-drunk-on-carbon.png" alt="Screenshot of the Drunk on Carbon project">
+						</div>			
+						<div class="project">				
+							<div class="description">
+								<h2>Tiny AMS</h2>
+								<p>If you were building an association management system from scratch, where would you start? This is my take on that MVP using Python, Flask, SQLite, and Jinja.</p>
+								<p><a href="https://tiny-ams.herokuapp.com" target="blank">Go there.</a></p>
+							</div>
+							<img src="images/screenshot-tiny-ams.png" alt="Screenshot of the Tiny AMS project">
+						</div>
+					</div>																
 			</section>
 		</div>
-	</div>
-
-	<div class="bkgDark">
-		<section class="wrapper" id="projects">
-			<h1>Projects</h1>
-				<div>
-					<div class="project">
-						<div class="description">
-							<h2>Drunk on Carbon</h2>
-							<p>Visualizing carbon dioxide equivalents as bottles of wine using Python, Django, JavaScript, Bootstrap, and three third-party APIs.</p>
-							<p><a href="https://drunk-on-carbon.herokuapp.com/" target="blank">Go there.</a></p>
-						</div>
-						<img src="images/screenshot-drunk-on-carbon.png" alt="Screenshot of the Drunk on Carbon project">
-					</div>			
-					<div class="project">				
-						<div class="description">
-							<h2>Tiny AMS</h2>
-							<p>If you were building an association management system from scratch, where would you start? This is my take on that MVP using Python, Flask, SQLite, and Jinja.</p>
-							<p><a href="https://tiny-ams.herokuapp.com" target="blank">Go there.</a></p>
-						</div>
-						<img src="images/screenshot-tiny-ams.png" alt="Screenshot of the Tiny AMS project">
-					</div>
-				</div>																
-		</section>
-	</div>
-	<footer class="bkgLight" id="contact">
-		<div class="wrapper">	
-			<h1>Get in touch</h1>
-			<a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a>
-			<ul>		
-				<li><a href="http://www.linkedin.com/in/taytufenkjian"><img src="images/linkedin-square.png" alt="LinkedIn icon"/></a></li>
-				<li><a href="https://twitter.com/Taysized"><img src="images/twitter3.png" alt="Twitter icon"/></a></li>
-				<li><a href="https://github.com/TayTufenkjian"><img src="images/github3.png" alt="Github icon"/></a></li>
-			</ul>
-			2022 in Tampa, FL
-		</div>
-	</footer>
-</body>
-
+		<footer class="bkgLight" id="contact">
+			<div class="wrapper">	
+				<h1>Get in touch</h1>
+				<a href="mailto:taytuf@gmail.com">taytuf@gmail.com</a>
+				<ul>		
+					<li><a href="http://www.linkedin.com/in/taytufenkjian"><img src="images/linkedin-square.png" alt="LinkedIn icon" class="circle"/></a></li>
+					<li><a href="https://twitter.com/Taysized"><img src="images/twitter3.png" alt="Twitter icon" class="circle"/></a></li>
+					<li><a href="https://github.com/TayTufenkjian"><img src="images/github3.png" alt="Github icon" class="circle"/></a></li>
+				</ul>
+				2022 in Tampa, FL
+			</div>
+		</footer>
+	</body>
 </html>
-
