@@ -46,22 +46,22 @@ nav .wrapper {
     padding: 0.5rem;
 }
 
-nav ul {
+#menu {
     display: flex;
     gap: 1em;
     margin-left: auto;
 }
 
-nav ul li {
+#menu li {
     flex: 1;
 }
 
-nav ul li:hover {
+#menu li:hover, #mobile-menu li:hover {
     color: #07dda4;
     cursor: pointer;
 }
 
-#menu-icon {
+#menu-icon, #mobile-menu {
     display: none;
 }
 
@@ -147,11 +147,12 @@ footer img:hover {
 
 @media screen and (max-width: 670px) {
     #menu-icon {
+        cursor: pointer;
         display: block;
         margin-left: auto;
     }
 
-    nav ul {
+    #menu {
         display: none;
     }
 }
