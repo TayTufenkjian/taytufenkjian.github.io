@@ -66,11 +66,11 @@ nav ul li:hover {
 
 .bkgLight { 
     background-color: #eee;
-    color: #222;
+    color: #100c08;
 }
 
 .bkgDark {
-    background-color: #222;
+    background-color: #100c08;
     color: #eee;
 }
 
