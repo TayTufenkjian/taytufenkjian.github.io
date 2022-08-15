@@ -1,7 +1,17 @@
+@font-face {
+    font-family: "Graphik";
+    src: url("fonts/GraphikRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Courier Prime";
+    src: url("fonts/CourierPrime-Regular.ttf") format("truetype");
+}
+
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Abel', 'Helvetica', sans-serif;
+    font-family: "Graphik", "Helvetica", sans-serif;
     font-size: 24px;
     margin: 0;
 }
@@ -14,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Architects Daughter', 'Helvetica', sans-serif;
+    font-family: "Courier Prime", monospace;
     margin: 0;
     padding: 1rem 0;
 }
