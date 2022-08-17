@@ -160,10 +160,15 @@ footer img:hover {
 }
 
 @media screen and (max-width: 670px) {
+    #name {
+        font-size: 1.75em;
+    }
+
     #menu-icon {
         cursor: pointer;
         display: block;
         margin-left: auto;
+        width: 40px;
     }
 
     #menu {
